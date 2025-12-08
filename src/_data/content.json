@@ -1,0 +1,76 @@
+{
+  "site": {
+    "title": "Jindřichův dům",
+    "subtitle": "Vítejte v Krkonoších • Pension v centru Krkonoš"
+  },
+  "accommodation": {
+    "checkIn": "od 15:00",
+    "checkOut": "do 10:00",
+    "keyReturn": "v kuchyni"
+  },
+  "wifi": {
+    "networkName": "jindrichuvdum_hoste",
+    "password": "Jindrich"
+  },
+  "meals": {
+    "breakfast": {
+      "time": "8:00 - 10:00",
+      "warning": "Snídaně na cesty: Pouze po domluvě a za poplatek"
+    },
+    "dinner": {
+      "time": "18:00 - 20:00"
+    },
+    "bar": {
+      "time": "od 13:00",
+      "note": "zvoňte na zvoneček"
+    }
+  },
+  "houseRules": [
+    {
+      "icon": "🚭",
+      "title": "Zákaz kouření",
+      "description": "v celém objektu (včetně e-cigaret)"
+    },
+    {
+      "icon": "♻️",
+      "title": "Třídíme odpad:",
+      "description": "papír a plast na každém patře, ostatní v přízemí"
+    },
+    {
+      "icon": "🔥",
+      "title": "Kamna v herní místnosti:",
+      "description": "přikládá pouze personál"
+    }
+  ],
+  "contacts": {
+    "operator": {
+      "label": "Provozovatel",
+      "icon": "📱",
+      "number": "739 655 826"
+    },
+    "mountainRescue": {
+      "label": "Horská služba",
+      "icon": "⛰️",
+      "number": "602 448 444"
+    },
+    "ambulance": {
+      "label": "Záchranná služba",
+      "icon": "🚑",
+      "number": "155 / 112"
+    },
+    "fireDepartment": {
+      "label": "Hasiči",
+      "icon": "🚒",
+      "number": "150"
+    }
+  },
+  "registration": {
+    "title": "Online domovní kniha",
+    "description": "Naskenujte QR kód pro vyplnění registračního formuláře",
+    "qrUrl": "https://portal.deskline.net/en/Checkin/Reception/CZE/89af773f-2cbc-4405-a4d5-69d8e8208c89?userId=c278c811-a195-49ed-93ae-0e20861ecb9b",
+    "qrImageSize": 200
+  },
+  "footer": {
+    "message": "Přejeme Vám příjemný pobyt v Krkonoších!"
+  }
+}

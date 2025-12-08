@@ -1,0 +1,16 @@
+{
+  "name": "jindrichuv-dum",
+  "version": "1.0.0",
+  "description": "Jindřichův dům - Information pages for guests",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

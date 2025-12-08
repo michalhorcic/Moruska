@@ -1,0 +1,114 @@
+---
+layout: layouts/print-a6-landscape.njk
+title: Jindřichův dům - Informace pro hosty (A6 landscape)
+permalink: /info-a6-landscape.html
+---
+
+<div class="print-container">
+    <div class="header">
+        <h1>🏔️ {{ content.site.title }}</h1>
+        <p>{{ content.site.subtitle }}</p>
+    </div>
+
+    <div class="content-grid">
+        <!-- LEVÝ SLOUPEC -->
+        <div class="left-column">
+            <!-- UBYTOVÁNÍ -->
+            <div class="section">
+                <div class="section-title">
+                    <span class="icon">🏠</span>
+                    <span>UBYTOVÁNÍ</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">🔑</span>
+                    <div>
+                        <strong>Check-in:</strong> {{ content.accommodation.checkIn }}<br>
+                        <strong>Check-out:</strong> {{ content.accommodation.checkOut }}<br>
+                        <strong>Vrácení klíčů:</strong> {{ content.accommodation.keyReturn }}
+                    </div>
+                </div>
+            </div>
+
+            <!-- WIFI -->
+            <div class="section">
+                <div class="section-title">
+                    <span class="icon">📶</span>
+                    <span>WIFI</span>
+                </div>
+                <div class="wifi-box">
+                    <div class="wifi-name">📡 {{ content.wifi.networkName }}</div>
+                    <div class="wifi-pass">🔒 Heslo: <strong>{{ content.wifi.password }}</strong></div>
+                </div>
+            </div>
+
+            <!-- STRAVOVÁNÍ -->
+            <div class="section">
+                <div class="section-title">
+                    <span class="icon">🍽️</span>
+                    <span>STRAVOVÁNÍ</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">☕</span>
+                    <div><strong>Snídaně:</strong> {{ content.meals.breakfast.time }}</div>
+                </div>
+                <div class="info-item">
+                    <span class="icon">🍲</span>
+                    <div><strong>Večeře:</strong> {{ content.meals.dinner.time }}</div>
+                </div>
+                <div class="info-item">
+                    <span class="icon">🍺</span>
+                    <div><strong>Bar:</strong> {{ content.meals.bar.time }} ({{ content.meals.bar.note }})</div>
+                </div>
+                <div class="warning-box">
+                    ⚠️ <strong>{{ content.meals.breakfast.warning }}</strong>
+                </div>
+            </div>
+
+            <!-- KONTAKTY -->
+            <div class="section">
+                <div class="section-title">
+                    <span class="icon">📞</span>
+                    <span>DŮLEŽITÉ KONTAKTY</span>
+                </div>
+                <div class="contact-grid">
+                    {% for key, contact in content.contacts %}
+                    <div class="contact-item">
+                        <div class="label">{{ contact.label }}</div>
+                        <div class="number">{{ contact.icon }} {{ contact.number }}</div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- PRAVÝ SLOUPEC -->
+        <div class="right-column">
+            <!-- PRAVIDLA -->
+            <div class="section">
+                <div class="section-title">
+                    <span class="icon">ℹ️</span>
+                    <span>PRAVIDLA DOMU</span>
+                </div>
+                {% for rule in content.houseRules %}
+                <div class="info-item">
+                    <span class="icon">{{ rule.icon }}</span>
+                    <div><strong>{{ rule.title }}</strong> {{ rule.description }}</div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- QR KÓD -->
+            <div class="qr-section">
+                <p>📋 {{ content.registration.title | upper }}</p>
+                <div class="qr-code">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data={{ content.registration.qrUrl }}" alt="QR kód domovní kniha">
+                </div>
+                <p style="font-size: 7pt; margin-top: 3px; font-weight: normal;">Naskenujte pro vyplnění</p>
+            </div>
+
+            <div class="footer">
+                {{ content.footer.message }} 🏔️❤️
+            </div>
+        </div>
+    </div>
+</div>

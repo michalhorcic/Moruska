@@ -12,6 +12,7 @@ globs: *
 ## WORKFLOW & RELEASE RULES
 
 ## TECH STACK
+- Eleventy (11ty) - Recommended for generating HTML documents for both web and print.
 
 ## DEBUGGING
 
