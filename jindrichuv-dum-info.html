@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jindřichův dům - Informace pro hosty</title>
+    <style>
+        @page {
+            size: A5 portrait;
+            margin: 0;
+        }
+        
+        @media print {
+            html, body {
+                width: 148mm;
+                height: 210mm;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            width: 148mm;
+            height: 210mm;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            width: 148mm;
+            height: 210mm;
+            padding: 15mm;
+            background: white;
+            color: #333;
+            font-size: 10pt;
+            line-height: 1.4;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #333;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .header h1 {
+            font-size: 20pt;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        
+        .header p {
+            font-size: 9pt;
+            color: #666;
+        }
+        
+        .section {
+            margin-bottom: 12px;
+        }
+        
+        .section-title {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-bottom: 6px;
+            padding-bottom: 3px;
+            border-bottom: 2px solid #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .section-title .icon {
+            font-size: 14pt;
+        }
+        
+        .info-item {
+            margin-bottom: 6px;
+            padding-left: 0px;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        
+        .info-item .icon {
+            font-size: 12pt;
+            min-width: 20px;
+            text-align: center;
+        }
+        
+        .info-item strong {
+            font-weight: bold;
+        }
+        
+        .wifi-box {
+            background: #f5f5f5;
+            border: 2px solid #333;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 5px;
+        }
+        
+        .wifi-box .wifi-name {
+            font-size: 11pt;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        
+        .wifi-box .wifi-pass {
+            font-size: 10pt;
+        }
+        
+        .warning-box {
+            background: #f0f0f0;
+            border-left: 4px solid #333;
+            padding: 8px;
+            margin: 8px 0;
+            font-size: 9pt;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 6px;
+        }
+        
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        
+        .contact-item .label {
+            font-size: 8pt;
+            color: #666;
+            text-transform: uppercase;
+        }
+        
+        .contact-item .number {
+            font-size: 12pt;
+            font-weight: bold;
+        }
+        
+        .qr-section {
+            text-align: center;
+            margin-top: 12px;
+            padding-top: 10px;
+            border-top: 2px dashed #999;
+        }
+        
+        .qr-section p {
+            font-size: 9pt;
+            margin-bottom: 6px;
+        }
+        
+        .qr-code {
+            display: inline-block;
+            padding: 8px;
+            background: white;
+            border: 2px solid #333;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 12px;
+            padding-top: 8px;
+            border-top: 1px solid #ccc;
+            font-size: 9pt;
+            color: #666;
+        }
+        
+        @media print {
+            body {
+                width: 148mm;
+                height: 210mm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏔️ Jindřichův dům</h1>
+        <p>Vítejte v Krkonoších</p>
+    </div>
+
+    <!-- UBYTOVÁNÍ -->
+    <div class="section">
+        <div class="section-title">
+            <span class="icon">🏠</span>
+            <span>UBYTOVÁNÍ</span>
+        </div>
+        <div class="info-item">
+            <span class="icon">🔑</span>
+            <div>
+                <strong>Check-in:</strong> od 15:00<br>
+                <strong>Check-out:</strong> do 10:00<br>
+                <strong>Vrácení klíčů:</strong> v kuchyni
+            </div>
+        </div>
+    </div>
+
+    <!-- WIFI -->
+    <div class="section">
+        <div class="section-title">
+            <span class="icon">📶</span>
+            <span>WIFI</span>
+        </div>
+        <div class="wifi-box">
+            <div class="wifi-name">📡 jindrichuvdum_hoste</div>
+            <div class="wifi-pass">🔒 Heslo: <strong>Jindrich</strong></div>
+        </div>
+    </div>
+
+    <!-- STRAVOVÁNÍ -->
+    <div class="section">
+        <div class="section-title">
+            <span class="icon">🍽️</span>
+            <span>STRAVOVÁNÍ</span>
+        </div>
+        <div class="info-item">
+            <span class="icon">☕</span>
+            <div><strong>Snídaně:</strong> 8:00 - 10:00</div>
+        </div>
+        <div class="info-item">
+            <span class="icon">🍲</span>
+            <div><strong>Večeře:</strong> 18:00 - 20:00</div>
+        </div>
+        <div class="info-item">
+            <span class="icon">🍺</span>
+            <div><strong>Bar:</strong> od 13:00 (zvoňte na zvoneček)</div>
+        </div>
+        <div class="warning-box">
+            ⚠️ <strong>Snídaně na cesty:</strong> Odnášení snídaně pouze po domluvě a za poplatek
+        </div>
+    </div>
+
+    <!-- PRAVIDLA A PROVOZ -->
+    <div class="section">
+        <div class="section-title">
+            <span class="icon">ℹ️</span>
+            <span>DŮLEŽITÉ INFORMACE</span>
+        </div>
+        <div class="info-item">
+            <span class="icon">🚭</span>
+            <div><strong>Zákaz kouření</strong> v celém objektu (včetně e-cigaret)</div>
+        </div>
+        <div class="info-item">
+            <span class="icon">♻️</span>
+            <div><strong>Třídíme odpad:</strong> papír a plast na každém patře, ostatní v přízemí</div>
+        </div>
+        <div class="info-item">
+            <span class="icon">🔥</span>
+            <div><strong>Kamna v herní místnosti:</strong> přikládá pouze personál</div>
+        </div>
+    </div>
+
+    <!-- KONTAKTY -->
+    <div class="section">
+        <div class="section-title">
+            <span class="icon">📞</span>
+            <span>NOUZOVÉ KONTAKTY</span>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="label">Provozovatel</div>
+                <div class="number">📱 739 655 826</div>
+            </div>
+            <div class="contact-item">
+                <div class="label">Horská služba</div>
+                <div class="number">⛰️ 602 448 444</div>
+            </div>
+            <div class="contact-item">
+                <div class="label">Záchranná služba</div>
+                <div class="number">🚑 155 / 112</div>
+            </div>
+            <div class="contact-item">
+                <div class="label">Hasiči</div>
+                <div class="number">🚒 150</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QR KÓD -->
+    <div class="qr-section">
+        <p><strong>📋 Online domovní kniha</strong></p>
+        <div class="qr-code">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://portal.deskline.net/en/Checkin/Reception/CZE/89af773f-2cbc-4405-a4d5-69d8e8208c89?userId=c278c811-a195-49ed-93ae-0e20861ecb9b" alt="QR kód domovní kniha">
+        </div>
+        <p style="font-size: 8pt; margin-top: 4px;">Naskenujte pro vyplnění</p>
+    </div>
+
+    <div class="footer">
+        Přejeme Vám příjemný pobyt! 🏔️
+    </div>
+</body>
+</html>
