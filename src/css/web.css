@@ -192,6 +192,9 @@
             font-weight: 700;
             margin-bottom: 15px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            word-break: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
         }
 
         .wifi-password {
@@ -346,6 +349,8 @@
 
             .wifi-name {
                 font-size: 1.4em;
+                word-break: break-word;
+                overflow-wrap: break-word;
             }
 
             .wifi-password {

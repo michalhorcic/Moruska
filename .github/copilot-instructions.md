@@ -32,6 +32,7 @@ globs: *
     - House rules.
     - Emergency contacts.
     - QR code for registration.
+- When displaying the WiFi network name on landing pages, ensure it does not overflow its container, especially on various screen widths.
 - To minimize text duplication in HTML projects with minimal programming:
     - Use CSS variables for short, repeated text using the `content` property.
     - Store text in HTML data attributes and reference it via CSS.
