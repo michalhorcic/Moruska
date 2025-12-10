@@ -50,3 +50,19 @@ globs: *
     - Utilize Emmet snippets in VS Code for frequently used HTML blocks.
     - Consider static site generators like Eleventy or Hugo for templating with data files (JSON/YAML).
 - Use Libre Baskerville font for all headers and Open Sans for the body and the rest of the text.
+- When creating a website for a mountain cottage, maintain the same style, fonts, and color scheme as the current website (e.g., https://www.jindrichuvdum.cz/index.html).
+- When creating a website for a mountain cottage, the design should be clean and modern without overdoing icons, using the mountain cottage aesthetic with natural colors that reflect the Krkonoš environment.
+- When creating a new presentation website, include the following sections:
+  - Hero section with a full-screen background image and call-to-action buttons
+  - Navigation bar with smooth scrolling links and a link to a practical information page
+  - Basic info section
+  - Photo gallery (use 12 images)
+  - Rooms section
+  - Facilities section
+  - Dining section
+  - Pricing table
+  - Contact information
+- The color palette for mountain cottage websites should include:
+  - Colors: #3a3a3a (dark gray), #c8d5c4 (sage green), #c85a3a (terracotta), #b8826f (warm brown)
+  - Fonts: Libre Baskerville for headers, Open Sans for body text
+- Hero sections should use a linear gradient with rgba values for background overlays.

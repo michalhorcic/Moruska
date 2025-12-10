@@ -1,76 +1,174 @@
 {
-  "site": {
-    "title": "Jindřichův dům",
-    "subtitle": "Vítejte v Krkonoších • Pension v centru Krkonoš"
-  },
-  "accommodation": {
-    "checkIn": "od 15:00",
-    "checkOut": "do 10:00",
-    "keyReturn": "v kuchyni"
-  },
-  "wifi": {
-    "networkName": "jindrichuvdum_hoste",
-    "password": "Jindrich"
-  },
-  "meals": {
-    "breakfast": {
-      "time": "8:00 - 10:00",
-      "warning": "Snídaně na cesty: Pouze po domluvě a za poplatek"
+  "practicalInfo": {
+    "site": {
+      "title": "Jindřichův dům",
+      "subtitle": "Vítejte v Krkonoších • Pension v centru Krkonoš"
     },
-    "dinner": {
-      "time": "18:00 - 20:00"
+    "accommodation": {
+      "checkIn": "od 15:00",
+      "checkOut": "do 10:00",
+      "keyReturn": "v kuchyni"
     },
-    "bar": {
-      "time": "od 13:00",
-      "note": "zvoňte na zvoneček"
+    "wifi": {
+      "networkName": "jindrichuvdum_hoste",
+      "password": "Jindrich"
+    },
+    "meals": {
+      "breakfast": {
+        "time": "8:00 - 10:00",
+        "warning": "Snídaně na cesty: Pouze po domluvě a za poplatek"
+      },
+      "dinner": {
+        "time": "18:00 - 20:00"
+      },
+      "bar": {
+        "time": "od 13:00",
+        "note": "zvoňte na zvoneček"
+      }
+    },
+    "houseRules": [
+      {
+        "icon": "🚭",
+        "title": "Zákaz kouření",
+        "description": "v celém objektu (včetně e-cigaret)"
+      },
+      {
+        "icon": "♻️",
+        "title": "Třídíme odpad:",
+        "description": "papír a plast na každém patře, ostatní v přízemí"
+      },
+      {
+        "icon": "🔥",
+        "title": "Kamna v herní místnosti:",
+        "description": "přikládá pouze personál"
+      }
+    ],
+    "contacts": {
+      "operator": {
+        "label": "Provozovatel",
+        "icon": "📱",
+        "number": "739 655 826"
+      },
+      "mountainRescue": {
+        "label": "Horská služba",
+        "icon": "⛰️",
+        "number": "602 448 444"
+      },
+      "ambulance": {
+        "label": "Záchranná služba",
+        "icon": "🚑",
+        "number": "155 / 112"
+      },
+      "fireDepartment": {
+        "label": "Hasiči",
+        "icon": "🚒",
+        "number": "150"
+      }
+    },
+    "registration": {
+      "title": "Online domovní kniha",
+      "description": "Naskenujte QR kód pro vyplnění registračního formuláře",
+      "qrUrl": "https://portal.deskline.net/en/Checkin/Reception/CZE/89af773f-2cbc-4405-a4d5-69d8e8208c89?userId=c278c811-a195-49ed-93ae-0e20861ecb9b",
+      "qrImageSize": 200
+    },
+    "footer": {
+      "message": "Přejeme Vám příjemný pobyt v Krkonoších!"
     }
   },
-  "houseRules": [
-    {
-      "icon": "🚭",
-      "title": "Zákaz kouření",
-      "description": "v celém objektu (včetně e-cigaret)"
+  "cottage": {
+    "hero": {
+      "title": "Jindřichův dům",
+      "subtitle": "Chata v centru Krkonoš",
+      "location": "Pec pod Sněžkou, 1 030 m n. m.",
+      "phone": "739 655 826",
+      "email": "jindrichuvdum@jindrichuvdum.cz"
     },
-    {
-      "icon": "♻️",
-      "title": "Třídíme odpad:",
-      "description": "papír a plast na každém patře, ostatní v přízemí"
+    "basicInfo": {
+      "title": "Základní info",
+      "description": "Chata Jindřichův dům se nachází v jedné z nejkrásnějších oblastí Východních Krkonoš, v Peci pod Sněžkou v nadmořské výšce 1 030 m. Naše chata leží v centru SkiResortu Pec pod Sněžkou se 14ti km sjezdovek všech obtížností na obou stranách malebného údolí a s nádhernými výhledy na nejvyšší horu Sněžku. Přímo před chatou jsou 2 vleky Eso a Mulda. Všechny sjezdovky jsou vzájemně propojeny a bez problémů tak můžete lyžovat v celém lyžařském areálu."
     },
-    {
-      "icon": "🔥",
-      "title": "Kamna v herní místnosti:",
-      "description": "přikládá pouze personál"
+    "rooms": {
+      "title": "Pokoje",
+      "description": "Na Jindřichově domě Vás ubytujeme ve 2 - 6 lůžkových pokojích. Na každém pokoji je umyvadlo s teplou a studenou vodou, sociální zařízení je společné na patře."
+    },
+    "facilities": {
+      "title": "Vybavení",
+      "description": "V prostorné herně si můžete zahrát ping-pong, stolní fotbálek a kulečník. Lze zde také využít videoprojekci. Pro malé děti máme na chatě dětský koutek s různými hračkami."
+    },
+    "dining": {
+      "title": "Stravování",
+      "description": "Stylová restaurace s velkou nabídkou teplých a studených nápojů, točeným pivem a limonádou je samozřejmostí. V létě Vás rádi obsloužíme na terase před chatou s nezapomenutelným výhledem na Obří důl a Sněžku. Jídelna je vybavena televizí, knihovnou, najdete zde různé stolní hry a můžete se tady připojit na Wi-Fi."
+    },
+    "pricing": {
+      "title": "Ceník - ubytování s polopenzí",
+      "note": "V letní i zimní sezóně provozujeme chatu standardně s polopenzí. Rádi přivítáme skupiny i jednotlivce.",
+      "seasons": [
+        {
+          "period": "1.12. - 13.12.",
+          "adult": "880 Kč",
+          "child": "810 Kč"
+        },
+        {
+          "period": "14.12. 2024 - 3.1.",
+          "adult": "980 Kč",
+          "child": "910 Kč"
+        },
+        {
+          "period": "VÁNOCE, SILVESTR",
+          "adult": "1920 Kč",
+          "child": "1720 Kč",
+          "note": "BEZ PSŮ"
+        },
+        {
+          "period": "4.1. - 31.3. 2026",
+          "adult": "950 Kč",
+          "child": "880 Kč"
+        },
+        {
+          "period": "Letní sezóna: 1.6. - 30.9.",
+          "adult": "880 Kč",
+          "child": "800 Kč"
+        },
+        {
+          "period": "Mimo sezóna: 1.4.-31.5. a 1.10. - 30.11.",
+          "adult": "800 Kč",
+          "child": "750 Kč"
+        }
+      ],
+      "important": [
+        "Příjezd na chatu: Nejdříve v 16:00 hod.",
+        "Odjezd z chatu: Nejpozději v 10:00 hod.",
+        "Na chatě Jindřichův dům není možné používat platební karty, veškeré platby je nutné uhradit HOTOVĚ případně převodem přes QR kód.",
+        "V uvedené ceně není zahrnut rekreační poplatek městu Pec pod Sněžkou, který platí osoby starší 18 let a činí Kč 35,--/1 den."
+      ]
+    },
+    "contact": {
+      "title": "Kontakt",
+      "name": "Chata JINDŘICHŮV DŮM",
+      "address": "542 21 Pec pod Sněžkou 24",
+      "phone": "+420 739 655 826",
+      "email": "jindrichuvdum@jindrichuvdum.cz",
+      "owner": "Moruška s.r.o.",
+      "ownerAddress": "Za Skalkou 13, Praha 4, 147 00",
+      "ico": "23741457",
+      "dic": "CZ23741457",
+      "website": "www.jindrichuvdum.cz"
+    },
+    "gallery": {
+      "images": [
+        "/img/gallery/1.JPG",
+        "/img/gallery/2.JPG",
+        "/img/gallery/3.JPG",
+        "/img/gallery/4.JPG",
+        "/img/gallery/5.JPG",
+        "/img/gallery/6.JPG",
+        "/img/gallery/7.JPG",
+        "/img/gallery/8.JPG",
+        "/img/gallery/9.JPG",
+        "/img/gallery/10.JPG",
+        "/img/gallery/11.JPG",
+        "/img/gallery/12.JPG"
+      ]
     }
-  ],
-  "contacts": {
-    "operator": {
-      "label": "Provozovatel",
-      "icon": "📱",
-      "number": "739 655 826"
-    },
-    "mountainRescue": {
-      "label": "Horská služba",
-      "icon": "⛰️",
-      "number": "602 448 444"
-    },
-    "ambulance": {
-      "label": "Záchranná služba",
-      "icon": "🚑",
-      "number": "155 / 112"
-    },
-    "fireDepartment": {
-      "label": "Hasiči",
-      "icon": "🚒",
-      "number": "150"
-    }
-  },
-  "registration": {
-    "title": "Online domovní kniha",
-    "description": "Naskenujte QR kód pro vyplnění registračního formuláře",
-    "qrUrl": "https://portal.deskline.net/en/Checkin/Reception/CZE/89af773f-2cbc-4405-a4d5-69d8e8208c89?userId=c278c811-a195-49ed-93ae-0e20861ecb9b",
-    "qrImageSize": 200
-  },
-  "footer": {
-    "message": "Přejeme Vám příjemný pobyt v Krkonoších!"
   }
 }

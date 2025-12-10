@@ -1,0 +1,133 @@
+---
+layout: layouts/web.njk
+title: Jindřichův dům - Informace pro hosty
+---
+
+<div class="container">
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header-content">
+            <h1>🏔️ {{ content.practicalInfo.site.title }}</h1>
+            <p class="subtitle">{{ content.practicalInfo.site.subtitle }}</p>
+        </div>
+    </div>
+
+    <!-- MAIN GRID -->
+    <div class="grid">
+        <!-- UBYTOVÁNÍ -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">🏠</div>
+                <h2 class="card-title">Ubytování</h2>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">🔑</div>
+                <div class="info-text">
+                    <strong>Check-in:</strong> {{ content.practicalInfo.accommodation.checkIn }}
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">🚪</div>
+                <div class="info-text">
+                    <strong>Check-out:</strong> {{ content.practicalInfo.accommodation.checkOut }}
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">🔐</div>
+                <div class="info-text">
+                    <strong>Vrácení klíčů:</strong> {{ content.practicalInfo.accommodation.keyReturn }}
+                </div>
+            </div>
+        </div>
+
+        <!-- WIFI -->
+        <div class="card wifi-card">
+            <div class="card-header">
+                <div class="card-icon">📶</div>
+                <h2 class="card-title">WiFi připojení</h2>
+            </div>
+            <div class="wifi-box">
+                <div class="wifi-name">📡 {{ content.practicalInfo.wifi.networkName }}</div>
+                <div>🔒 Heslo:</div>
+                <div class="wifi-password">{{ content.practicalInfo.wifi.password }}</div>
+            </div>
+        </div>
+
+        <!-- STRAVOVÁNÍ -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">🍽️</div>
+                <h2 class="card-title">Stravování</h2>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">☕</div>
+                <div class="info-text">
+                    <strong>Snídaně:</strong> {{ content.practicalInfo.meals.breakfast.time }}
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">🍲</div>
+                <div class="info-text">
+                    <strong>Večeře:</strong> {{ content.practicalInfo.meals.dinner.time }}
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">🍺</div>
+                <div class="info-text">
+                    <strong>Bar:</strong> {{ content.practicalInfo.meals.bar.time }}<br>
+                    <small>({{ content.practicalInfo.meals.bar.note }})</small>
+                </div>
+            </div>
+            <div class="warning-box">
+                ⚠️ <strong>{{ content.practicalInfo.meals.breakfast.warning }}</strong>
+            </div>
+        </div>
+
+        <!-- PRAVIDLA -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">ℹ️</div>
+                <h2 class="card-title">Pravidla domu</h2>
+            </div>
+            <ul class="rules-list">
+                {% for rule in content.practicalInfo.houseRules %}
+                <li>
+                    <span style="font-size: 1.5em;">{{ rule.icon }}</span>
+                    <span><strong>{{ rule.title }}</strong> {{ rule.description }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <!-- KONTAKTY -->
+    <div class="card" style="margin-bottom: 30px;">
+        <div class="card-header">
+            <div class="card-icon">📞</div>
+            <h2 class="card-title">Důležité kontakty</h2>
+        </div>
+        <div class="contact-grid">
+            {% for key, contact in content.practicalInfo.contacts %}
+            <div class="contact-item">
+                <div class="contact-label">{{ contact.label }}</div>
+                <div class="contact-number">{{ contact.icon }} {{ contact.number }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- QR KÓD -->
+    <div class="qr-section">
+        <h2>📋 {{ content.practicalInfo.registration.title }}</h2>
+        <p class="qr-description">{{ content.practicalInfo.registration.description }}</p>
+        <div class="qr-code">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size={{ content.practicalInfo.registration.qrImageSize }}x{{ content.practicalInfo.registration.qrImageSize }}&data={{ content.practicalInfo.registration.qrUrl }}" alt="QR kód domovní kniha">
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-emoji">🏔️❤️</div>
+        <p><strong>{{ content.practicalInfo.footer.message }}</strong></p>
+    </div>
+</div>

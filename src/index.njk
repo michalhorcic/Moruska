@@ -1,133 +1,162 @@
 ---
-layout: layouts/web.njk
-title: Jindřichův dům - Informace pro hosty
+layout: layouts/base.njk
+title: Jindřichův dům - Horská chata v Krkonoších
 ---
 
-<div class="container">
-    <!-- HEADER -->
-    <div class="header">
-        <div class="header-content">
-            <h1>🏔️ {{ content.site.title }}</h1>
-            <p class="subtitle">{{ content.site.subtitle }}</p>
-        </div>
-    </div>
-
-    <!-- MAIN GRID -->
-    <div class="grid">
-        <!-- UBYTOVÁNÍ -->
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon">🏠</div>
-                <h2 class="card-title">Ubytování</h2>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/cottage.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="nav-logo">{{ content.cottage.hero.title }}</div>
+            <div class="nav-links">
+                <a href="#o-chate">O chatě</a>
+                <a href="#pokoje">Pokoje</a>
+                <a href="#vybaveni">Vybavení</a>
+                <a href="#cenik">Ceník</a>
+                <a href="#kontakt">Kontakt</a>
+                <a href="/practical-info" class="nav-link-practical">Praktické info</a>
             </div>
-            <div class="info-item">
-                <div class="info-icon">🔑</div>
-                <div class="info-text">
-                    <strong>Check-in:</strong> {{ content.accommodation.checkIn }}
-                </div>
-            </div>
-            <div class="info-item">
-                <div class="info-icon">🚪</div>
-                <div class="info-text">
-                    <strong>Check-out:</strong> {{ content.accommodation.checkOut }}
-                </div>
-            </div>
-            <div class="info-item">
-                <div class="info-icon">🔐</div>
-                <div class="info-text">
-                    <strong>Vrácení klíčů:</strong> {{ content.accommodation.keyReturn }}
-                </div>
+            <div class="nav-phone">
+                <a href="tel:{{ content.cottage.hero.phone }}">{{ content.cottage.hero.phone }}</a>
             </div>
         </div>
+    </nav>
 
-        <!-- WIFI -->
-        <div class="card wifi-card">
-            <div class="card-header">
-                <div class="card-icon">📶</div>
-                <h2 class="card-title">WiFi připojení</h2>
-            </div>
-            <div class="wifi-box">
-                <div class="wifi-name">📡 {{ content.wifi.networkName }}</div>
-                <div>🔒 Heslo:</div>
-                <div class="wifi-password">{{ content.wifi.password }}</div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">{{ content.cottage.hero.title }}</h1>
+            <p class="hero-subtitle">{{ content.cottage.hero.subtitle }}</p>
+            <p class="hero-location">{{ content.cottage.hero.location }}</p>
+            <div class="hero-cta">
+                <a href="tel:{{ content.cottage.hero.phone }}" class="btn btn-primary">Zavolejte nám</a>
+                <a href="#cenik" class="btn btn-secondary">Zobrazit ceník</a>
             </div>
         </div>
+    </section>
 
-        <!-- STRAVOVÁNÍ -->
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon">🍽️</div>
-                <h2 class="card-title">Stravování</h2>
-            </div>
-            <div class="info-item">
-                <div class="info-icon">☕</div>
-                <div class="info-text">
-                    <strong>Snídaně:</strong> {{ content.meals.breakfast.time }}
-                </div>
-            </div>
-            <div class="info-item">
-                <div class="info-icon">🍲</div>
-                <div class="info-text">
-                    <strong>Večeře:</strong> {{ content.meals.dinner.time }}
-                </div>
-            </div>
-            <div class="info-item">
-                <div class="info-icon">🍺</div>
-                <div class="info-text">
-                    <strong>Bar:</strong> {{ content.meals.bar.time }}<br>
-                    <small>({{ content.meals.bar.note }})</small>
-                </div>
-            </div>
-            <div class="warning-box">
-                ⚠️ <strong>{{ content.meals.breakfast.warning }}</strong>
-            </div>
+    <!-- Basic Info Section -->
+    <section id="o-chate" class="section">
+        <div class="container-narrow">
+            <h2 class="section-title">{{ content.cottage.basicInfo.title }}</h2>
+            <p class="section-text">{{ content.cottage.basicInfo.description }}</p>
         </div>
+    </section>
 
-        <!-- PRAVIDLA -->
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon">ℹ️</div>
-                <h2 class="card-title">Pravidla domu</h2>
-            </div>
-            <ul class="rules-list">
-                {% for rule in content.houseRules %}
-                <li>
-                    <span style="font-size: 1.5em;">{{ rule.icon }}</span>
-                    <span><strong>{{ rule.title }}</strong> {{ rule.description }}</span>
-                </li>
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Fotogalerie</h2>
+            <div class="gallery-grid">
+                {% for image in content.cottage.gallery.images %}
+                <div class="gallery-item">
+                    <img src="{{ image }}" alt="Jindřichův dům fotografie {{ loop.index }}" loading="lazy">
+                </div>
                 {% endfor %}
-            </ul>
-        </div>
-    </div>
-
-    <!-- KONTAKTY -->
-    <div class="card" style="margin-bottom: 30px;">
-        <div class="card-header">
-            <div class="card-icon">📞</div>
-            <h2 class="card-title">Důležité kontakty</h2>
-        </div>
-        <div class="contact-grid">
-            {% for key, contact in content.contacts %}
-            <div class="contact-item">
-                <div class="contact-label">{{ contact.label }}</div>
-                <div class="contact-number">{{ contact.icon }} {{ contact.number }}</div>
             </div>
-            {% endfor %}
         </div>
-    </div>
+    </section>
 
-    <!-- QR KÓD -->
-    <div class="qr-section">
-        <h2>📋 {{ content.registration.title }}</h2>
-        <p class="qr-description">{{ content.registration.description }}</p>
-        <div class="qr-code">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size={{ content.registration.qrImageSize }}x{{ content.registration.qrImageSize }}&data={{ content.registration.qrUrl }}" alt="QR kód domovní kniha">
+    <!-- Rooms Section -->
+    <section id="pokoje" class="section section-alt">
+        <div class="container-narrow">
+            <h2 class="section-title">{{ content.cottage.rooms.title }}</h2>
+            <p class="section-text">{{ content.cottage.rooms.description }}</p>
         </div>
-    </div>
+    </section>
 
-    <!-- FOOTER -->
-    <div class="footer">
-        <div class="footer-emoji">🏔️❤️</div>
-        <p><strong>{{ content.footer.message }}</strong></p>
-    </div>
-</div>
+    <!-- Facilities Section -->
+    <section id="vybaveni" class="section">
+        <div class="container-narrow">
+            <h2 class="section-title">{{ content.cottage.facilities.title }}</h2>
+            <p class="section-text">{{ content.cottage.facilities.description }}</p>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section class="section section-alt">
+        <div class="container-narrow">
+            <h2 class="section-title">{{ content.cottage.dining.title }}</h2>
+            <p class="section-text">{{ content.cottage.dining.description }}</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="cenik" class="section pricing-section">
+        <div class="container">
+            <h2 class="section-title">{{ content.cottage.pricing.title }}</h2>
+            <p class="section-subtitle">{{ content.cottage.pricing.note }}</p>
+            
+            <div class="pricing-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Období</th>
+                            <th>Dospělý</th>
+                            <th>Dítě (2-12 let)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for season in content.cottage.pricing.seasons %}
+                        <tr>
+                            <td>{{ season.period }}</td>
+                            <td>{{ season.adult }}</td>
+                            <td>{{ season.child }}{% if season.note %} <br><small>({{ season.note }})</small>{% endif %}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="important-info">
+                <h3>Důležité informace</h3>
+                <ul>
+                    {% for info in content.cottage.pricing.important %}
+                    <li>{{ info }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="section section-alt contact-section">
+        <div class="container-narrow">
+            <h2 class="section-title">{{ content.cottage.contact.title }}</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>{{ content.cottage.contact.name }}</h3>
+                    <p>{{ content.cottage.contact.address }}</p>
+                </div>
+                <div class="contact-item">
+                    <p><strong>Telefon:</strong> <a href="tel:{{ content.cottage.hero.phone }}">{{ content.cottage.contact.phone }}</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:{{ content.cottage.hero.email }}">{{ content.cottage.contact.email }}</a></p>
+                    <p><strong>Web:</strong> <a href="http://{{ content.cottage.contact.website }}" target="_blank">{{ content.cottage.contact.website }}</a></p>
+                </div>
+                <div class="contact-item">
+                    <p><strong>{{ content.cottage.contact.owner }}</strong></p>
+                    <p>{{ content.cottage.contact.ownerAddress }}</p>
+                    <p>IČO: {{ content.cottage.contact.ico }}</p>
+                    <p>DIČ: {{ content.cottage.contact.dic }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Jindřichův dům. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+</body>
+</html>
