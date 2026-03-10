@@ -78,18 +78,18 @@
   "cottage": {
     "hero": {
       "title": "Jindřichův dům",
-      "subtitle": "Chata v centru Krkonoš",
+      "subtitle": "Rodinný horský penzion v Krkonoších",
       "location": "Pec pod Sněžkou, 1 030 m n. m.",
       "phone": "739 655 826",
       "email": "jindrichuvdum@jindrichuvdum.cz"
     },
     "basicInfo": {
       "title": "Základní info",
-      "description": "Chata Jindřichův dům se nachází v jedné z nejkrásnějších oblastí Východních Krkonoš, v Peci pod Sněžkou v nadmořské výšce 1 030 m. Naše chata leží v centru SkiResortu Pec pod Sněžkou se 14ti km sjezdovek všech obtížností na obou stranách malebného údolí a s nádhernými výhledy na nejvyšší horu Sněžku. Přímo před chatou jsou 2 vleky Eso a Mulda. Všechny sjezdovky jsou vzájemně propojeny a bez problémů tak můžete lyžovat v celém lyžařském areálu."
+      "description": "Jindřichův dům je menší rodinný horský penzion v Peci pod Sněžkou (1 030 m n. m.), přímo v srdci Krkonoš. Máme rádi osobní přístup – rádi poradíme s výlety, domluvíme se na detailech pobytu a (pokud to jde) vyjdeme vstříc Vašim přáním. Zároveň je dobré počítat s tím, že nejsme velký hotel se stálou recepcí a restaurací à la carte – fungujeme v horském režimu a některé věci jsou možné pouze po domluvě. V zimě oceníte polohu u sjezdovek SkiResortu Pec pod Sněžkou – vleky Eso a Mulda jsou přímo před chatou."
     },
     "rooms": {
       "title": "Pokoje",
-      "description": "Na Jindřichově domě Vás ubytujeme ve 2 - 6 lůžkových pokojích. Na každém pokoji je umyvadlo s teplou a studenou vodou, sociální zařízení je společné na patře."
+      "description": "Celková kapacita penzionu je 45 osob. Ubytujeme Vás ve 2–6lůžkových pokojích – jednoduše, účelně a po horsku. Na každém pokoji je umyvadlo s teplou a studenou vodou, sociální zařízení je společné na patře. Pokud máte specifické požadavky (dětská postýlka, pes, pozdní příjezd apod.), dejte nám prosím vědět předem – rádi se pokusíme vyhovět, když to provoz dovolí."
     },
     "facilities": {
       "title": "Vybavení",
@@ -97,11 +97,11 @@
     },
     "dining": {
       "title": "Stravování",
-      "description": "Stylová restaurace s velkou nabídkou teplých a studených nápojů, točeným pivem a limonádou je samozřejmostí. V létě Vás rádi obsloužíme na terase před chatou s nezapomenutelným výhledem na Obří důl a Sněžku. Jídelna je vybavena televizí, knihovnou, najdete zde různé stolní hry a můžete se tady připojit na Wi-Fi."
+      "description": "Standardně fungujeme s polopenzí – snídaně je formou bufetu, večeře je společná (polévka + jedno hlavní jídlo). Pro školy a skupiny umíme po domluvě zajistit i plnou penzi. Máme také bar/výčep pro ubytované hosty (provoz záleží na obsazenosti). Pokud potřebujete vegetariánskou nebo bezlepkovou variantu, ozvěte se předem – někdy to jde, ale ne vždy."
     },
     "pricing": {
       "title": "Ceník - ubytování s polopenzí",
-      "note": "V letní i zimní sezóně provozujeme chatu standardně s polopenzí. Rádi přivítáme skupiny i jednotlivce.",
+      "note": "V letní i zimní sezóně u nás standardně nabízíme ubytování s polopenzí (bufetová snídaně, společná večeře). Rádi přivítáme jednotlivce, rodiny i skupiny; pro školy umíme po domluvě zajistit i plnou penzi.",
       "seasons": [
         {
           "period": "1.12. - 13.12.",
@@ -136,10 +136,11 @@
         }
       ],
       "important": [
-        "Příjezd na chatu: Nejdříve v 16:00 hod.",
-        "Odjezd z chatu: Nejpozději v 10:00 hod.",
-        "Na chatě Jindřichův dům není možné používat platební karty, veškeré platby je nutné uhradit HOTOVĚ případně převodem přes QR kód.",
-        "V uvedené ceně není zahrnut rekreační poplatek městu Pec pod Sněžkou, který platí osoby starší 18 let a činí Kč 35,--/1 den."
+        "Příjezd (check-in): od 15:00 (po domluvě i později).",
+        "Odjezd (check-out): nejpozději do 10:00.",
+        "Platební karty nepřijímáme – platba je možná hotově nebo převodem přes QR kód.",
+        "V uvedené ceně není zahrnut rekreační poplatek městu Pec pod Sněžkou (platí osoby starší 18 let) – 35 Kč / osoba / den.",
+        "Mimo sezónu je cena orientační – může se lišit podle obsazenosti a osobní domluvy."
       ]
     },
     "contact": {
