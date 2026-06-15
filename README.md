@@ -102,3 +102,14 @@ Eleventy configuration is in `.eleventy.js`. Current settings:
 - `npm start` - Start development server with live reload
 - `npm run serve` - Same as start
 - `npm run build` - Build static site for production
+
+## Contact Form on Vercel
+
+The music space inquiry form posts to `/api/music-inquiry`, a Vercel serverless function that sends the message through Resend.
+
+Set these environment variables in Vercel:
+
+- `RESEND_API_KEY` - API key from Resend
+- `CONTACT_FROM_EMAIL` - verified sender, for example `Jindrichuv dum <studio@jindrichuvdum.cz>`
+
+The form messages are delivered to `jindrichuvdum@jindrichuvdum.cz`.

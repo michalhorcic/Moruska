@@ -195,12 +195,11 @@ title: Hudební prostor na horách | Jindřichův dům
         <h2 id="cta-title">Napište nám pár vět.</h2>
         <p>Kolik vás je, kdy byste chtěli přijet a co byste u nás chtěli hrát nebo tvořit.</p>
       </div>
-      <!--
-        Formulář: prozatím mailto fallback.
-        Pro plně funkční verzi: Netlify Forms (přidat data-netlify="true")
-        nebo Formspree (action="https://formspree.io/f/YOUR_ID").
-      -->
-      <form class="contact" action="mailto:jindrichuvdum@jindrichuvdum.cz" method="post" enctype="text/plain">
+      <form class="contact" action="/api/music-inquiry" method="post">
+        <label class="contact__trap">
+          Firma
+          <input type="text" name="firma" tabindex="-1" autocomplete="off">
+        </label>
         <label>
           Jméno
           <input type="text" name="jmeno" autocomplete="name" required>
@@ -217,6 +216,7 @@ title: Hudební prostor na horách | Jindřichův dům
           Co máte v plánu?
           <textarea name="zprava" rows="4" placeholder="Kapela, workshop, produkce, jam…" required></textarea>
         </label>
+        <p class="contact__status" data-contact-status role="status" aria-live="polite"></p>
         <button class="button button--primary" type="submit">Odeslat dotaz</button>
       </form>
     </section>
@@ -230,5 +230,44 @@ title: Hudební prostor na horách | Jindřichův dům
     <a href="mailto:jindrichuvdum@jindrichuvdum.cz">jindrichuvdum@jindrichuvdum.cz</a>
   </footer>
 
+<script>
+  const contactForm = document.querySelector('.contact');
+  const contactStatus = document.querySelector('[data-contact-status]');
+
+  if (contactForm && contactStatus) {
+    contactForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+      const formData = new FormData(contactForm);
+      const payload = Object.fromEntries(formData.entries());
+
+      contactStatus.textContent = 'Odesílám dotaz...';
+      contactStatus.className = 'contact__status';
+      submitButton.disabled = true;
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) {
+          throw new Error('Formulář se nepodařilo odeslat.');
+        }
+
+        contactForm.reset();
+        contactStatus.textContent = 'Děkujeme, dotaz dorazil. Ozveme se vám co nejdřív.';
+        contactStatus.classList.add('contact__status--success');
+      } catch (error) {
+        contactStatus.textContent = 'Omlouváme se, odeslání se nepovedlo. Napište prosím na jindrichuvdum@jindrichuvdum.cz.';
+        contactStatus.classList.add('contact__status--error');
+      } finally {
+        submitButton.disabled = false;
+      }
+    });
+  }
+</script>
 </body>
 </html>
