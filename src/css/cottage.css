@@ -60,6 +60,7 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     color: white;
+    text-decoration: none;
 }
 
 .nav-links {
@@ -106,6 +107,22 @@ body {
 }
 
 .nav-link-practical::after {
+    display: none;
+}
+
+.nav-link-music {
+    background: var(--secondary-color);
+    color: var(--primary-color) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.nav-link-music:hover {
+    background: #aec2aa;
+    color: var(--primary-color) !important;
+}
+
+.nav-link-music::after {
     display: none;
 }
 

@@ -15,11 +15,11 @@
     },
     "meals": {
       "breakfast": {
-        "time": "8:00 - 10:00",
+        "time": "v 8:00",
         "warning": "Snídaně na cesty: Pouze po domluvě a za poplatek"
       },
       "dinner": {
-        "time": "18:00 - 20:00"
+        "time": "v 18:00"
       },
       "bar": {
         "time": "od 13:00",

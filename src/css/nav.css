@@ -1,0 +1,129 @@
+/*
+ * nav.css — sdílené styly navigace pro všechny stránky
+ * Stránky, které nenačítají cottage.css, odkazují na tento soubor.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #3a3a3a;
+    --secondary-color: #c8d5c4;
+    --accent-color: #c85a3a;
+    --accent-warm: #b8826f;
+    --font-header: 'Libre Baskerville', serif;
+    --font-body: 'Open Sans', sans-serif;
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(58, 58, 58, 0.96);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: var(--shadow-md);
+    font-family: var(--font-body);
+}
+
+.nav-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav-logo {
+    font-family: var(--font-header);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; left: 0;
+    width: 0; height: 2px;
+    background: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Highlighted nav buttons */
+.nav-link-practical {
+    background: var(--accent-color);
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.nav-link-practical:hover {
+    background: var(--accent-warm) !important;
+    color: white !important;
+}
+
+.nav-link-practical::after {
+    display: none !important;
+}
+
+.nav-link-music {
+    background: var(--secondary-color);
+    color: var(--primary-color) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.nav-link-music:hover {
+    background: #aec2aa !important;
+    color: var(--primary-color) !important;
+}
+
+.nav-link-music::after {
+    display: none !important;
+}
+
+.nav-phone a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+    .nav-phone { font-size: 0.9rem; }
+}
