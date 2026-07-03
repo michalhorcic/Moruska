@@ -1,0 +1,623 @@
+Life Operating Manual / Personal Context for AI Assistants
+
+1. How to Work With Me
+
+I prefer practical, direct advice. I like when an AI helps me make decisions, not just lists options. I value grounded trade-offs, concrete recommendations, and warnings about pitfalls.
+
+Good responses for me usually:
+
+* Give a clear recommendation.
+* Explain why.
+* Mention risks or weak points.
+* Include concrete quantities, models, prices, or steps where relevant.
+* Avoid vague motivational language.
+* Challenge weak assumptions when needed.
+
+I often work across several domains at once: running a mountain chalet, cooking for groups, maintaining a large building, building a music studio/live setup, learning guitar, and improving home/business tech infrastructure.
+
+I appreciate continuity. When I ask follow-up questions, assume they connect to my earlier plans unless I clearly change topic.
+
+⸻
+
+2. Main Life Context
+
+I operate a mountain chalet/guesthouse in Krkonoše, in the Pec pod Sněžkou area. The business is Jindřichův dům, operated as an s.r.o., and I am jednatel.
+
+The chalet has around 13 rooms and capacity around 45 people. It operates year-round. Winter occupancy is around 70%. We provide half board and sometimes full board, especially for schools.
+
+Important guest groups:
+
+* Families
+* Schools
+* Children’s groups
+* Corporate groups
+* Occasional events / small concerts
+
+The business is currently run by a small team, mainly two people, so operational simplicity matters. I often need solutions that are robust, low-maintenance, and not too expensive.
+
+⸻
+
+3. Chalet Business Priorities
+
+Main business priorities:
+
+* Avoid losing bookings because emails are forgotten.
+* Improve shared inbox / email handling.
+* Automate or semi-automate booking workflows.
+* Keep operations manageable for a small team.
+* Improve guest experience without adding too much manual work.
+* Keep investment decisions practical.
+
+Current email setup:
+
+* Using Active24 basic email hosting.
+* It works, but is limited.
+* Problems: difficult shared inbox handling, no clear ownership of replies, risk of unanswered guest inquiries.
+* I have considered Google Workspace, collaborative inboxes, Missive, and other shared email systems.
+* Cost sensitivity matters; expensive helpdesk-style tools may be overkill.
+
+AI/business automation interest:
+
+* I am interested in AI agents for booking.
+* I have or plan to have booking data in PostgreSQL.
+* I would like AI to eventually help with availability, guest communication, and operational workflows.
+
+Financial/pricing context:
+
+* Example school pricing: around 950 Kč full board, sometimes 900 Kč if over 35 people.
+* Example adult price: around 880 Kč + 35 Kč local tax.
+* Example child price: around 500 Kč for a young child.
+* Expected profit estimate mentioned around 1.5 million Kč.
+* VAT registration became relevant after turnover exceeded around 2,536,500 Kč in mid-May 2026.
+
+⸻
+
+4. Chalet Building Context
+
+The building is large and somewhat complex.
+
+Basement:
+
+* C-shaped basement space around 90–100 m², possibly 120 m² total.
+* Height around 2.5 m.
+* Often around 14–15 °C.
+* Humidity has been measured around 60–69%, sometimes higher.
+* Contains or may contain music/studio space and storage.
+* Ventilation options include four small windows, garage door, and stair door.
+
+Dining room:
+
+* Around 50 m².
+* Used for guests.
+* Also relevant for events and possibly water dispenser placement.
+
+Heating:
+
+* Main heating: two gas boilers, Buderus Logamax plus GB112, around 15 years old.
+* Radiators plus underfloor heating in basement.
+* Typical radiator water temperature around 40 °C.
+* Considering replacement with modern condensing boilers; a quote around 150,000 Kč was mentioned.
+
+Underfloor heating:
+
+* Basement underfloor heating around 80 m².
+* Giacomini distributor.
+* 9 circuits.
+* Flow around 1 l/min.
+* Y-filter cleaned.
+* Pump set to III.
+* Example measurement: return 18 °C, supply 35 °C after around 2 hours.
+* Pressure around 1.4 bar.
+
+Kachlová kamna / tiled stove:
+
+* Large tiled stove heating across two floors.
+* Basement around 100 m² and dining room around 50 m² affected by it.
+* Example firing pattern: 10 medium softwood logs at midnight can keep warmth until around 13:00.
+* Typical use around 2 fires per 24 hours.
+* Need advice on loading, air inlets, preventing smoke, wood size, and top-down firing.
+
+Wood:
+
+* Interested in storing 6–8 m³ indoors for a season and more outdoors for future years.
+* Has asked about storing 10–12 m³ of spruce logs.
+* Interested in efficient cutting, splitting fresh wood, and building practical wood sheds near basement doors.
+* Wants wood storage that works operationally, not just aesthetically.
+
+⸻
+
+5. Kitchen / Cooking Context
+
+I cook for groups, often 20–45 people. I care about scaling recipes reliably.
+
+Equipment:
+
+* Retigo combi oven.
+* Shock chiller.
+* Medium GN containers.
+* Large pots and group-cooking setup.
+
+Common meals:
+
+* Goulash
+* Chicken paprikash
+* Bolognese
+* Chilli con carne
+* Butter chicken
+* Soups
+* Bulk pasta/rice meals
+* Roast meat with dumplings/sauerkraut
+* Tray cakes
+
+Useful cooking patterns:
+
+* I often ask quantities for 20, 25, 30, 38, or 40 people.
+* Children’s groups are common, including preschool children.
+* I need realistic portions, not restaurant-theory portions.
+* I often cook with limited time and need “good enough and safe” solutions.
+
+Known portion references:
+
+* Pasta for hungry 18-year-olds: needs generous portions.
+* Rice for preschool risotto: around 60 g dry rice per child was considered.
+* Onion for 40-person goulash: around 5 kg onion.
+* Beef goulash: beef shank, around 4 cm pieces.
+* Butter chicken has been scaled to 10 and 30 portions.
+* Sauerkraut side quantity has been considered for around 21 people, mostly small children.
+
+Food safety interests:
+
+* Safe cooling before refrigeration.
+* Use of shock chiller.
+* Refreezing partially cooked meat.
+* Thawing sausages for fire.
+* Stock cooling and freezing.
+* Beef tallow storage and water removal.
+
+Bread:
+
+* I make sourdough bread.
+* Rye starter.
+* Typical dough: around 580 g wheat flour + 160 g rye flour.
+* I use a ceramic pot and sometimes the combi oven.
+* Basement temperature around 14 °C affects fermentation.
+* I care about proofing readiness, banneton seam direction, and flouring.
+
+⸻
+
+6. Music Goals
+
+My long-term music goal is to create and perform live electronic music with guitar.
+
+Influences:
+
+* Apparat
+* HVOB
+* Kiasmos
+* Ólafur Arnalds
+* Nils Frahm
+* Jan Blomqvist
+* Christian Löffler
+* Slowdive
+
+Desired style:
+
+* Melodic electronic music.
+* Ambient / neoclassical / downtempo influences.
+* Guitar integrated with electronic loops and synths.
+* Live performance-oriented, not only studio production.
+* I want a setup that encourages playing and learning, not endless configuration.
+
+Important constraints:
+
+* I prefer minimal movement during performance.
+* Piano/guitar should be central.
+* I want a main artist station and a guest/jam station.
+* I want to be able to host small concerts for 30–40 people.
+* I sometimes think about weekend rental of the music/event space for around 4–6k Kč.
+
+⸻
+
+7. Current Music Gear
+
+Instruments and controllers:
+
+* Yamaha Pacifica 112V electric guitar.
+* Bass guitar.
+* Acoustic guitar.
+* Ukulele for guests.
+* Roland FP-30X digital piano, used as main MIDI controller with 88 keys.
+* Arturia MicroFreak.
+* Oberheim TEO-5.
+* Circuit Tracks.
+* Roland SP-404MKII.
+* iPad with Loopy Pro, Koala, Zeeon, BLEASS Saturator.
+* Mac mini M4.
+* Minilab 3.
+
+Guitar / pedal gear:
+
+* Boss IR-2 amp/cab sim.
+* Boss BD-2 overdrive.
+* Boss RC-10R looper.
+* Zoom MS-70CDR+ stereo effects.
+* Shure SM57 dynamic microphone.
+* AIAIAI headphones.
+
+PA / mixer:
+
+* 2× RCF ART 910A.
+* Allen & Heath ZEDi-10 mixer.
+* Considering larger mixers such as Yamaha MG16XU, RCF F16XR, Zoom L-12next, or Allen & Heath CQ/QU style options.
+
+Current or previous routing ideas:
+
+* ZEDi-10:
+    * CH1 guitar.
+    * CH2 MicroFreak.
+    * CH3/4 SP-404 stereo.
+    * ST1 Circuit Tracks stereo.
+    * ST2 Ableton via USB.
+    * Aux send to SP-404.
+* Minimal setup:
+    * Loopy Pro stereo.
+    * Circuit Tracks stereo.
+    * TEO-5 stereo using two mono channels.
+    * Guitar/bass mono.
+    * SP-404 possibly mono for guests.
+    * SM57 into SP-404.
+
+Pedalboard routing ideas:
+
+* Guitar → BD-2 → IR-2 → Zoom MS-70CDR+ → RC-10R → mixer.
+* Alternative use of IR-2 FX loop / stereo return.
+* Interest in using SP-404 for guitar sampling and effects, even in the studio.
+
+Sync / looping:
+
+* Circuit Tracks often considered as master clock.
+* Loopy Pro used for fixed-length quantized looping.
+* SP-404 is useful but can drift because it lacks the same kind of loop quantization.
+* RC-10R useful for drums and guitar looping.
+* I care about MIDI sync, clock, and making loop workflows stable.
+
+⸻
+
+8. Music Learning Context
+
+I am learning guitar and have been playing for several months.
+
+Current learning interests:
+
+* Power chords.
+* Pentatonic scales.
+* Playing scales from different notes.
+* CAGED system.
+* Learning chords across the whole neck.
+* Ear-based jamming.
+* Integrating guitar into electronic music.
+* Using TEO-5 or synth pads to practice guitar/bass over.
+
+Physical issue:
+
+* Wrist pain can occur with power chords, so ergonomic advice matters.
+
+Learning style:
+
+* I like practical exercises.
+* I want training that connects directly to making music.
+* I prefer simple useful tools over theory overload.
+* I am interested in apps/websites that help learn the fretboard, chords, and improvisation.
+
+⸻
+
+9. Music Studio / Space
+
+The music space is in or connected to the chalet basement.
+
+The stage/room plan evolved:
+
+* Originally considered around 4×9 m.
+* Later around 4×3 m after chairs.
+* Later around 4×7 m.
+* There is a main artist zone and a guest jam zone.
+
+Guest zone ideas:
+
+* Should be fun and approachable for guests.
+* Gear can include acoustic guitar, ukulele, SP-404, MicroFreak, microphone, and maybe simple percussion.
+* Avoid setups that require guests to understand complex routing.
+
+Furniture/acoustics:
+
+* Interested in rugs/carpets, especially low-pile wool carpets.
+* Budget for a better carpet around 10,000–15,000 Kč.
+* Considered IKEA STOENSE 200×300.
+* Need seating suitable for guitar/studio/percussion.
+* Considered simple stools/chairs such as IKEA MÖRTFORS.
+
+Lighting:
+
+* Philips Hue is used or planned in the music space.
+* Setup includes around 4× E27 bulbs and 10 m LED strips.
+* Interested in Hue Bridge / Wi-Fi bridge options.
+
+⸻
+
+10. Tech / Network Context
+
+Internet:
+
+* O2 5G modem.
+* Mikrotik hEX PoE Lite router.
+* Expected internet limit around 100 Mbps or less.
+
+Wi-Fi:
+
+* Initially two Ubiquiti AP AC Lite.
+* Plan to replace or expand with Ubiquiti U6+.
+* Possible final setup around 3–4 APs total.
+* Important locations: TV, dining room, bar, first floor.
+* U6 Mesh has been used or tested with wireless uplink.
+* UniFi Switch Lite 16 PoE added.
+
+Network issues already encountered:
+
+* U6+ LED blinking and not appearing in controller.
+* hEX PoE Lite likely insufficient for powering newer APs.
+* Solution involved PoE injector or proper PoE switch.
+* Guest VLAN ID 10 existed.
+* VLAN 10 on Mikrotik bridge.
+* UniFi SSID guest VLAN 10.
+* Trunk ports needed on uplink/AP ports.
+* There were issues where iPhone failed to join and Mac joined without internet, later resolved.
+
+Preferences:
+
+* I like Ubiquiti for Wi-Fi.
+* I may keep Mikrotik as router.
+* I am interested in whether a UniFi gateway adds value.
+* I care about robust guest Wi-Fi more than theoretical enterprise networking.
+
+Other tech:
+
+* Apple ecosystem is important.
+* Apple TV used.
+* Infuse used for media, SMB/SSH library questions.
+* Tapo cameras used.
+* Mac mini M4 used for studio and possibly local AI/LLM experiments.
+* Interested in local LLMs, PostgreSQL integration, and AI automation.
+
+⸻
+
+11. Devices / Smart Home
+
+Current or considered:
+
+* Philips Hue lighting.
+* Tapo cameras.
+* Ubiquiti network gear.
+* Possibly Home Assistant.
+* Old Raspberry Pi exists but may deserve replacement.
+* Interested in smart temperature/humidity sensors for the chalet.
+
+Sensor requirements:
+
+* Need 3–4 sensors in different places.
+* Prefer plug-in/no battery if possible, but reliable battery Zigbee is acceptable.
+* Considered Netatmo, Tapo, Ubiquiti, Zigbee, Home Assistant hub.
+* Preference for reliable, non-Chinese alternatives when possible.
+* Interested in good Home Assistant hardware, perhaps more robust than old Raspberry Pi.
+
+⸻
+
+12. Tools / Software / AI
+
+Apple ecosystem:
+
+* Heavy Apple use.
+* Mac mini M4.
+* iPad.
+* iPhone.
+* Apple TV.
+
+Music software:
+
+* Ableton.
+* Arturia V Collection.
+* Loopy Pro.
+* Koala.
+* Suno.ai interest.
+* AI music generation interest, but with concern about impact on music.
+
+AI interests:
+
+* Local LLMs on Mac mini M4.
+* AI agents connected to booking database.
+* Using AI for business operations.
+* AI-generated music visualization.
+* Comparing AI tools and music tools.
+
+When helping me with software:
+
+* Give concrete steps.
+* Assume I can handle moderate technical setup, but I dislike unnecessarily complicated installs.
+* I am pragmatic; I will accept simpler systems if they work.
+
+⸻
+
+13. Health / Family Context
+
+I have a young daughter, around 2 years old in 2026, around 13 kg during one fever episode.
+
+Useful child health context:
+
+* Fever episode involved temperatures up to 40.0 °C.
+* Medicines used included Panadol suppository 125 mg and Nurofen suppository 60 mg.
+* I asked about combining paracetamol/ibuprofen, intervals, febrile seizure risk, and when to worry.
+* I prefer concrete safety thresholds and dosing logic, but medical answers should be cautious and recommend professional help when needed.
+
+My own health context:
+
+* Recurrent colds/cough.
+* Dry cough can cause gagging with exertion.
+* Asked about ibuprofen, spirometry, and recurring symptoms.
+* Wrist pain from guitar power chords.
+
+For health questions:
+
+* Be careful and practical.
+* Give red flags.
+* Do not over-diagnose.
+* Explain when to call a doctor.
+
+⸻
+
+14. Household / Property / Maintenance
+
+Parking:
+
+* Private chalet parking.
+* Considering chain/sign “parking only for guests.”
+* Interested in elegant and legally sensible ways to prevent unauthorized parking.
+
+Wood/building maintenance:
+
+* Need practical advice on storing, cutting, splitting, and drying firewood.
+* Interested in wood sheds that fit chalet logistics.
+
+Cleaning:
+
+* Needs durable vacuum for chalet use.
+* Good experience with Miele.
+* Floors include carpet, lino, and tile.
+* Considering Miele C3 replacement or newer models.
+
+Gas stove:
+
+* Considering tálový plynový sporák.
+* Current professional burners may be too strong for simmering.
+* Typical pot sizes 10–20 l.
+* Cooking for up to 45 people.
+
+Guest facilities:
+
+* Needs simple water dispenser for dining room.
+* No water pipe available at the placement.
+* Prefer easy refill and possibly cooling.
+
+⸻
+
+15. Games / Leisure
+
+Games of interest:
+
+* Valheim.
+* X4 Foundations.
+* Mac M4 gaming.
+
+Valheim context:
+
+* Interested in starting new characters/worlds.
+* Considering no-map runs.
+* Interested in server-only mods, but client mods on macOS are inconvenient.
+* Has asked about Ashlands preparation, transferring Megingjord, skill retention, movable bases.
+
+Mac gaming:
+
+* Interested in games playable easily on Mac M4.
+* Interested in native macOS games.
+
+⸻
+
+16. Decision-Making Preferences
+
+When recommending purchases:
+
+* Use Czech/EU availability and prices when relevant.
+* Include trade-offs.
+* Mention whether a cheaper option is “good enough.”
+* Avoid only premium recommendations.
+* I often prefer robust, reliable gear over the absolute cheapest.
+* For business/chalet use, reliability and ease of maintenance matter more than novelty.
+
+When recommending music gear:
+
+* Do not push too much new gear.
+* Help me use what I already have.
+* Prioritize workflow clarity.
+* Avoid setups that become too complex to actually play.
+* Point out if I am solving a practice problem with a gear purchase.
+
+When recommending tech:
+
+* Keep operational reliability first.
+* Prefer systems that will still work when guests are present and I am busy.
+* Avoid fragile DIY solutions unless the benefit is clear.
+
+When answering cooking questions:
+
+* Give quantities.
+* Mention safety.
+* Explain how to adjust for children vs hungry adults.
+* Consider my equipment: Retigo, shock chiller, GN containers.
+
+⸻
+
+17. Current Strategic Direction
+
+Business:
+
+* Improve booking/email reliability.
+* Possibly move from basic Active24 email to a better shared inbox or Google Workspace-style setup.
+* Explore AI automation connected to booking data.
+
+Building:
+
+* Keep heating reliable.
+* Improve basement comfort/humidity.
+* Manage wood storage and stove use efficiently.
+
+Music:
+
+* Build a playable live electronic setup around:
+    * TEO-5
+    * FP-30X
+    * Guitar
+    * Circuit Tracks
+    * Loopy Pro
+    * SP-404
+    * Pedals
+* Use guest jam zone for approachable fun.
+* Avoid making the setup too complicated.
+
+Learning:
+
+* Continue guitar fundamentals.
+* Learn chords across the neck.
+* Use pentatonic scales and CAGED practically.
+* Practice with synth pads and loops.
+
+Tech:
+
+* Stabilize UniFi/Mikrotik network.
+* Use Apple ecosystem where it makes sense.
+* Possibly use Home Assistant for sensors.
+* Consider local AI but avoid spending time on fragile experiments unless useful.
+
+⸻
+
+18. How an AI Assistant Should Use This Document
+
+Use this document as persistent context. Do not repeat it back unless asked.
+
+When answering:
+
+* Infer relevant context from the section matching the user’s question.
+* Ask clarifying questions only when truly necessary.
+* Prefer a practical recommendation with reasoning.
+* Remember that many questions are operational, not theoretical.
+* For purchases, check current availability/prices when possible.
+* For legal, tax, medical, or safety-sensitive topics, be cautious and current.
+* For music workflow questions, prioritize actually playing and finishing music over expanding gear.
+* For chalet operations, prioritize reliability, simplicity, and guest experience.
