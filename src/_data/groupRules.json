@@ -1,0 +1,35 @@
+{
+  "sourceUrl": "https://docs.google.com/document/d/1Ie029jNsDX4DvWcvZyiK49TXyFmR4YJ8e8S9kihqKq4/edit?usp=drivesdk",
+  "intro": "Tato příloha doplňuje hlavní ubytovací řád. Za běžnou koordinaci pobytu odpovídá jeden předem určený vedoucí skupiny; u škol zůstává dohled nad dětmi na pedagogickém doprovodu.",
+  "sections": [
+    {
+      "title": "Před příjezdem",
+      "items": [
+        "Objednatel oznámí jméno a telefon vedoucího skupiny, skutečný počet účastníků, předpokládaný čas příjezdu a požadavky sjednané ve smlouvě nebo potvrzení rezervace.",
+        "Seznam účastníků a evidenční údaje budou předány způsobem dohodnutým s provozovatelem. Vedoucí skupiny zajistí, aby pravidla znali také ostatní dospělí a přiměřeně věku i děti.",
+        "Dietní požadavky a závažné potravinové alergie je nutné oznámit předem. Možnost jejich zajištění platí až po potvrzení provozovatelem.",
+        "V zimě se doprava k domu řeší místní taxi službou; s objednáním pomůžeme po domluvě. V létě je k vjezdu autem nutné placené povolení."
+      ]
+    },
+    {
+      "title": "Během pobytu",
+      "items": [
+        "Vedoucí skupiny je hlavní kontaktní osobou pro rozdělení pokojů, provozní změny, objednání doplňkových služeb, hlášení závad a řešení mimořádných situací.",
+        "Doprovázející dospělí zajišťují průběžný dohled nad nezletilými. U škol vykonává pedagogický dozor dohled v pokojích, jídelně, společných prostorách, při večerním programu i během přesunů mimo dům v rozsahu svých zákonných a interních povinností.",
+        "Skupina respektuje dohodnuté časy stravování a společného programu. Změny se řeší s provozovatelem předem, aby nenarušily přípravu jídel ani provoz domu.",
+        "Noční klid je 22:00–7:00. Pokud má skupina celý dům, lze předem sjednat jiný režim; ani tehdy nesmí být rušeno okolí.",
+        "Děti ani dospělí nemanipulují s kamny, kuchyňským nebo technickým zázemím, zabezpečením domu ani hudební aparaturou bez výslovného souhlasu.",
+        "Hudební prostor je dostupný pouze po předchozí domluvě a podle samostatných pravidel. Jeho využití není automatickou součástí každého skupinového pobytu."
+      ]
+    },
+    {
+      "title": "Škody, úrazy a odjezd",
+      "items": [
+        "Poškození majetku, závadu nebo jinou nebezpečnou situaci vedoucí skupiny oznámí provozovateli bezodkladně.",
+        "Za škodu odpovídá osoba, která ji způsobila, případně její zákonný zástupce podle právních předpisů. Vedoucí skupiny pomůže zjistit okolnosti a zajistí komunikaci s objednatelem.",
+        "Před odjezdem vedoucí zkontroluje pokoje a společné prostory, shromáždí klíče, nahlásí závady a ověří, že skupina odvezla osobní věci. Check-out je do 10:00, není-li předem dohodnuto jinak."
+      ]
+    }
+  ],
+  "closing": "V případě rozporu má přednost individuální smlouva nebo písemně potvrzená dohoda pro konkrétní pobyt; v ostatním platí hlavní ubytovací řád."
+}

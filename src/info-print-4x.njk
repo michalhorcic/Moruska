@@ -7,8 +7,8 @@ permalink: /info-print-4x.html
 <!-- KARTIČKA 1 -->
 <div class="print-container">
     <div class="header">
-        <h1>🏔️ {{ content.site.title }}</h1>
-        <p>{{ content.site.subtitle }}</p>
+        <h1>🏔️ {{ content.practicalInfo.site.title }}</h1>
+        <p>{{ content.practicalInfo.site.subtitle }}</p>
     </div>
 
     <div class="content-grid">
@@ -21,9 +21,9 @@ permalink: /info-print-4x.html
                 <div class="info-item">
                     <span class="icon">🔑</span>
                     <div>
-                        <strong>Check-in:</strong> {{ content.accommodation.checkIn }}<br>
-                        <strong>Check-out:</strong> {{ content.accommodation.checkOut }}<br>
-                        <strong>Vrácení klíčů:</strong> {{ content.accommodation.keyReturn }}
+                        <strong>Check-in:</strong> {{ content.practicalInfo.accommodation.checkIn }}<br>
+                        <strong>Check-out:</strong> {{ content.practicalInfo.accommodation.checkOut }}<br>
+                        <strong>Vrácení klíčů:</strong> {{ content.practicalInfo.accommodation.keyReturn }}
                     </div>
                 </div>
             </div>
@@ -34,8 +34,8 @@ permalink: /info-print-4x.html
                     <span>WIFI</span>
                 </div>
                 <div class="wifi-box">
-                    <div class="wifi-name">📡 {{ content.wifi.networkName }}</div>
-                    <div class="wifi-pass">🔒 Heslo: <strong>{{ content.wifi.password }}</strong></div>
+                    <div class="wifi-name">📡 {{ content.practicalInfo.wifi.networkName }}</div>
+                    <div class="wifi-pass">🔒 Heslo: <strong>{{ content.practicalInfo.wifi.password }}</strong></div>
                 </div>
             </div>
 
@@ -46,18 +46,18 @@ permalink: /info-print-4x.html
                 </div>
                 <div class="info-item">
                     <span class="icon">☕</span>
-                    <div><strong>Snídaně:</strong> {{ content.meals.breakfast.time }}</div>
+                    <div><strong>Snídaně:</strong> {{ content.practicalInfo.meals.breakfast.time }}</div>
                 </div>
                 <div class="info-item">
                     <span class="icon">🍲</span>
-                    <div><strong>Večeře:</strong> {{ content.meals.dinner.time }}</div>
+                    <div><strong>Večeře:</strong> {{ content.practicalInfo.meals.dinner.time }}</div>
                 </div>
                 <div class="info-item">
                     <span class="icon">🍺</span>
-                    <div><strong>Bar:</strong> {{ content.meals.bar.time }} ({{ content.meals.bar.note }})</div>
+                    <div><strong>Bar:</strong> {{ content.practicalInfo.meals.bar.time }} ({{ content.practicalInfo.meals.bar.note }})</div>
                 </div>
                 <div class="warning-box">
-                    ⚠️ <strong>{{ content.meals.breakfast.warning }}</strong>
+                    ⚠️ <strong>{{ content.practicalInfo.meals.breakfast.warning }}</strong>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@ permalink: /info-print-4x.html
                     <span>DŮLEŽITÉ KONTAKTY</span>
                 </div>
                 <div class="contact-grid">
-                    {% for key, contact in content.contacts %}
+                    {% for key, contact in content.practicalInfo.contacts %}
                     <div class="contact-item">
                         <div class="label">{{ contact.label }}</div>
                         <div class="number">{{ contact.icon }} {{ contact.number }}</div>
@@ -83,7 +83,7 @@ permalink: /info-print-4x.html
                     <span class="icon">ℹ️</span>
                     <span>PRAVIDLA DOMU</span>
                 </div>
-                {% for rule in content.houseRules %}
+                {% for rule in content.practicalInfo.houseRules %}
                 <div class="info-item">
                     <span class="icon">{{ rule.icon }}</span>
                     <div><strong>{{ rule.title }}</strong> {{ rule.description }}</div>
@@ -92,15 +92,15 @@ permalink: /info-print-4x.html
             </div>
 
             <div class="qr-section">
-                <p>📋 {{ content.registration.title | upper }}</p>
+                <p>📋 {{ content.practicalInfo.registration.title | upper }}</p>
                 <div class="qr-code">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data={{ content.registration.qrUrl }}" alt="QR kód domovní kniha">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data={{ content.practicalInfo.registration.qrUrl }}" alt="QR kód domovní kniha">
                 </div>
                 <p style="font-size: 7pt; margin-top: 3px; font-weight: normal;">Naskenujte pro vyplnění</p>
             </div>
 
             <div class="footer">
-                {{ content.footer.message }} 🏔️❤️
+                {{ content.practicalInfo.footer.message }} 🏔️❤️
             </div>
         </div>
     </div>
@@ -109,8 +109,8 @@ permalink: /info-print-4x.html
 <!-- KARTIČKA 2 -->
 <div class="print-container">
     <div class="header">
-        <h1>🏔️ {{ content.site.title }}</h1>
-        <p>{{ content.site.subtitle }}</p>
+        <h1>🏔️ {{ content.practicalInfo.site.title }}</h1>
+        <p>{{ content.practicalInfo.site.subtitle }}</p>
     </div>
 
     <div class="content-grid">
@@ -123,9 +123,9 @@ permalink: /info-print-4x.html
                 <div class="info-item">
                     <span class="icon">🔑</span>
                     <div>
-                        <strong>Check-in:</strong> {{ content.accommodation.checkIn }}<br>
-                        <strong>Check-out:</strong> {{ content.accommodation.checkOut }}<br>
-                        <strong>Vrácení klíčů:</strong> {{ content.accommodation.keyReturn }}
+                        <strong>Check-in:</strong> {{ content.practicalInfo.accommodation.checkIn }}<br>
+                        <strong>Check-out:</strong> {{ content.practicalInfo.accommodation.checkOut }}<br>
+                        <strong>Vrácení klíčů:</strong> {{ content.practicalInfo.accommodation.keyReturn }}
                     </div>
                 </div>
             </div>
@@ -136,8 +136,8 @@ permalink: /info-print-4x.html
                     <span>WIFI</span>
                 </div>
                 <div class="wifi-box">
-                    <div class="wifi-name">📡 {{ content.wifi.networkName }}</div>
-                    <div class="wifi-pass">🔒 Heslo: <strong>{{ content.wifi.password }}</strong></div>
+                    <div class="wifi-name">📡 {{ content.practicalInfo.wifi.networkName }}</div>
+                    <div class="wifi-pass">🔒 Heslo: <strong>{{ content.practicalInfo.wifi.password }}</strong></div>
                 </div>
             </div>
 
@@ -148,18 +148,18 @@ permalink: /info-print-4x.html
                 </div>
                 <div class="info-item">
                     <span class="icon">☕</span>
-                    <div><strong>Snídaně:</strong> {{ content.meals.breakfast.time }}</div>
+                    <div><strong>Snídaně:</strong> {{ content.practicalInfo.meals.breakfast.time }}</div>
                 </div>
                 <div class="info-item">
                     <span class="icon">🍲</span>
-                    <div><strong>Večeře:</strong> {{ content.meals.dinner.time }}</div>
+                    <div><strong>Večeře:</strong> {{ content.practicalInfo.meals.dinner.time }}</div>
                 </div>
                 <div class="info-item">
                     <span class="icon">🍺</span>
-                    <div><strong>Bar:</strong> {{ content.meals.bar.time }} ({{ content.meals.bar.note }})</div>
+                    <div><strong>Bar:</strong> {{ content.practicalInfo.meals.bar.time }} ({{ content.practicalInfo.meals.bar.note }})</div>
                 </div>
                 <div class="warning-box">
-                    ⚠️ <strong>{{ content.meals.breakfast.warning }}</strong>
+                    ⚠️ <strong>{{ content.practicalInfo.meals.breakfast.warning }}</strong>
                 </div>
             </div>
 
@@ -169,7 +169,7 @@ permalink: /info-print-4x.html
                     <span>DŮLEŽITÉ KONTAKTY</span>
                 </div>
                 <div class="contact-grid">
-                    {% for key, contact in content.contacts %}
+                    {% for key, contact in content.practicalInfo.contacts %}
                     <div class="contact-item">
                         <div class="label">{{ contact.label }}</div>
                         <div class="number">{{ contact.icon }} {{ contact.number }}</div>
@@ -185,7 +185,7 @@ permalink: /info-print-4x.html
                     <span class="icon">ℹ️</span>
                     <span>PRAVIDLA DOMU</span>
                 </div>
-                {% for rule in content.houseRules %}
+                {% for rule in content.practicalInfo.houseRules %}
                 <div class="info-item">
                     <span class="icon">{{ rule.icon }}</span>
                     <div><strong>{{ rule.title }}</strong> {{ rule.description }}</div>
@@ -194,15 +194,15 @@ permalink: /info-print-4x.html
             </div>
 
             <div class="qr-section">
-                <p>📋 {{ content.registration.title | upper }}</p>
+                <p>📋 {{ content.practicalInfo.registration.title | upper }}</p>
                 <div class="qr-code">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data={{ content.registration.qrUrl }}" alt="QR kód domovní kniha">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data={{ content.practicalInfo.registration.qrUrl }}" alt="QR kód domovní kniha">
                 </div>
                 <p style="font-size: 7pt; margin-top: 3px; font-weight: normal;">Naskenujte pro vyplnění</p>
             </div>
 
             <div class="footer">
-                {{ content.footer.message }} 🏔️❤️
+                {{ content.practicalInfo.footer.message }} 🏔️❤️
             </div>
         </div>
     </div>
@@ -211,8 +211,8 @@ permalink: /info-print-4x.html
 <!-- KARTIČKA 3 -->
 <div class="print-container">
     <div class="header">
-        <h1>🏔️ {{ content.site.title }}</h1>
-        <p>{{ content.site.subtitle }}</p>
+        <h1>🏔️ {{ content.practicalInfo.site.title }}</h1>
+        <p>{{ content.practicalInfo.site.subtitle }}</p>
     </div>
 
     <div class="content-grid">
@@ -225,9 +225,9 @@ permalink: /info-print-4x.html
                 <div class="info-item">
                     <span class="icon">🔑</span>
                     <div>
-                        <strong>Check-in:</strong> {{ content.accommodation.checkIn }}<br>
-                        <strong>Check-out:</strong> {{ content.accommodation.checkOut }}<br>
-                        <strong>Vrácení klíčů:</strong> {{ content.accommodation.keyReturn }}
+                        <strong>Check-in:</strong> {{ content.practicalInfo.accommodation.checkIn }}<br>
+                        <strong>Check-out:</strong> {{ content.practicalInfo.accommodation.checkOut }}<br>
+                        <strong>Vrácení klíčů:</strong> {{ content.practicalInfo.accommodation.keyReturn }}
                     </div>
                 </div>
             </div>
@@ -238,8 +238,8 @@ permalink: /info-print-4x.html
                     <span>WIFI</span>
                 </div>
                 <div class="wifi-box">
-                    <div class="wifi-name">📡 {{ content.wifi.networkName }}</div>
-                    <div class="wifi-pass">🔒 Heslo: <strong>{{ content.wifi.password }}</strong></div>
+                    <div class="wifi-name">📡 {{ content.practicalInfo.wifi.networkName }}</div>
+                    <div class="wifi-pass">🔒 Heslo: <strong>{{ content.practicalInfo.wifi.password }}</strong></div>
                 </div>
             </div>
 
@@ -250,18 +250,18 @@ permalink: /info-print-4x.html
                 </div>
                 <div class="info-item">
                     <span class="icon">☕</span>
-                    <div><strong>Snídaně:</strong> {{ content.meals.breakfast.time }}</div>
+                    <div><strong>Snídaně:</strong> {{ content.practicalInfo.meals.breakfast.time }}</div>
                 </div>
                 <div class="info-item">
                     <span class="icon">🍲</span>
-                    <div><strong>Večeře:</strong> {{ content.meals.dinner.time }}</div>
+                    <div><strong>Večeře:</strong> {{ content.practicalInfo.meals.dinner.time }}</div>
                 </div>
                 <div class="info-item">
                     <span class="icon">🍺</span>
-                    <div><strong>Bar:</strong> {{ content.meals.bar.time }} ({{ content.meals.bar.note }})</div>
+                    <div><strong>Bar:</strong> {{ content.practicalInfo.meals.bar.time }} ({{ content.practicalInfo.meals.bar.note }})</div>
                 </div>
                 <div class="warning-box">
-                    ⚠️ <strong>{{ content.meals.breakfast.warning }}</strong>
+                    ⚠️ <strong>{{ content.practicalInfo.meals.breakfast.warning }}</strong>
                 </div>
             </div>
 
@@ -271,7 +271,7 @@ permalink: /info-print-4x.html
                     <span>DŮLEŽITÉ KONTAKTY</span>
                 </div>
                 <div class="contact-grid">
-                    {% for key, contact in content.contacts %}
+                    {% for key, contact in content.practicalInfo.contacts %}
                     <div class="contact-item">
                         <div class="label">{{ contact.label }}</div>
                         <div class="number">{{ contact.icon }} {{ contact.number }}</div>
@@ -287,7 +287,7 @@ permalink: /info-print-4x.html
                     <span class="icon">ℹ️</span>
                     <span>PRAVIDLA DOMU</span>
                 </div>
-                {% for rule in content.houseRules %}
+                {% for rule in content.practicalInfo.houseRules %}
                 <div class="info-item">
                     <span class="icon">{{ rule.icon }}</span>
                     <div><strong>{{ rule.title }}</strong> {{ rule.description }}</div>
@@ -296,15 +296,15 @@ permalink: /info-print-4x.html
             </div>
 
             <div class="qr-section">
-                <p>📋 {{ content.registration.title | upper }}</p>
+                <p>📋 {{ content.practicalInfo.registration.title | upper }}</p>
                 <div class="qr-code">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data={{ content.registration.qrUrl }}" alt="QR kód domovní kniha">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data={{ content.practicalInfo.registration.qrUrl }}" alt="QR kód domovní kniha">
                 </div>
                 <p style="font-size: 7pt; margin-top: 3px; font-weight: normal;">Naskenujte pro vyplnění</p>
             </div>
 
             <div class="footer">
-                {{ content.footer.message }} 🏔️❤️
+                {{ content.practicalInfo.footer.message }} 🏔️❤️
             </div>
         </div>
     </div>
@@ -313,8 +313,8 @@ permalink: /info-print-4x.html
 <!-- KARTIČKA 4 -->
 <div class="print-container">
     <div class="header">
-        <h1>🏔️ {{ content.site.title }}</h1>
-        <p>{{ content.site.subtitle }}</p>
+        <h1>🏔️ {{ content.practicalInfo.site.title }}</h1>
+        <p>{{ content.practicalInfo.site.subtitle }}</p>
     </div>
 
     <div class="content-grid">
@@ -327,9 +327,9 @@ permalink: /info-print-4x.html
                 <div class="info-item">
                     <span class="icon">🔑</span>
                     <div>
-                        <strong>Check-in:</strong> {{ content.accommodation.checkIn }}<br>
-                        <strong>Check-out:</strong> {{ content.accommodation.checkOut }}<br>
-                        <strong>Vrácení klíčů:</strong> {{ content.accommodation.keyReturn }}
+                        <strong>Check-in:</strong> {{ content.practicalInfo.accommodation.checkIn }}<br>
+                        <strong>Check-out:</strong> {{ content.practicalInfo.accommodation.checkOut }}<br>
+                        <strong>Vrácení klíčů:</strong> {{ content.practicalInfo.accommodation.keyReturn }}
                     </div>
                 </div>
             </div>
@@ -340,8 +340,8 @@ permalink: /info-print-4x.html
                     <span>WIFI</span>
                 </div>
                 <div class="wifi-box">
-                    <div class="wifi-name">📡 {{ content.wifi.networkName }}</div>
-                    <div class="wifi-pass">🔒 Heslo: <strong>{{ content.wifi.password }}</strong></div>
+                    <div class="wifi-name">📡 {{ content.practicalInfo.wifi.networkName }}</div>
+                    <div class="wifi-pass">🔒 Heslo: <strong>{{ content.practicalInfo.wifi.password }}</strong></div>
                 </div>
             </div>
 
@@ -352,18 +352,18 @@ permalink: /info-print-4x.html
                 </div>
                 <div class="info-item">
                     <span class="icon">☕</span>
-                    <div><strong>Snídaně:</strong> {{ content.meals.breakfast.time }}</div>
+                    <div><strong>Snídaně:</strong> {{ content.practicalInfo.meals.breakfast.time }}</div>
                 </div>
                 <div class="info-item">
                     <span class="icon">🍲</span>
-                    <div><strong>Večeře:</strong> {{ content.meals.dinner.time }}</div>
+                    <div><strong>Večeře:</strong> {{ content.practicalInfo.meals.dinner.time }}</div>
                 </div>
                 <div class="info-item">
                     <span class="icon">🍺</span>
-                    <div><strong>Bar:</strong> {{ content.meals.bar.time }} ({{ content.meals.bar.note }})</div>
+                    <div><strong>Bar:</strong> {{ content.practicalInfo.meals.bar.time }} ({{ content.practicalInfo.meals.bar.note }})</div>
                 </div>
                 <div class="warning-box">
-                    ⚠️ <strong>{{ content.meals.breakfast.warning }}</strong>
+                    ⚠️ <strong>{{ content.practicalInfo.meals.breakfast.warning }}</strong>
                 </div>
             </div>
 
@@ -373,7 +373,7 @@ permalink: /info-print-4x.html
                     <span>DŮLEŽITÉ KONTAKTY</span>
                 </div>
                 <div class="contact-grid">
-                    {% for key, contact in content.contacts %}
+                    {% for key, contact in content.practicalInfo.contacts %}
                     <div class="contact-item">
                         <div class="label">{{ contact.label }}</div>
                         <div class="number">{{ contact.icon }} {{ contact.number }}</div>
@@ -389,7 +389,7 @@ permalink: /info-print-4x.html
                     <span class="icon">ℹ️</span>
                     <span>PRAVIDLA DOMU</span>
                 </div>
-                {% for rule in content.houseRules %}
+                {% for rule in content.practicalInfo.houseRules %}
                 <div class="info-item">
                     <span class="icon">{{ rule.icon }}</span>
                     <div><strong>{{ rule.title }}</strong> {{ rule.description }}</div>
@@ -398,15 +398,15 @@ permalink: /info-print-4x.html
             </div>
 
             <div class="qr-section">
-                <p>📋 {{ content.registration.title | upper }}</p>
+                <p>📋 {{ content.practicalInfo.registration.title | upper }}</p>
                 <div class="qr-code">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data={{ content.registration.qrUrl }}" alt="QR kód domovní kniha">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data={{ content.practicalInfo.registration.qrUrl }}" alt="QR kód domovní kniha">
                 </div>
                 <p style="font-size: 7pt; margin-top: 3px; font-weight: normal;">Naskenujte pro vyplnění</p>
             </div>
 
             <div class="footer">
-                {{ content.footer.message }} 🏔️❤️
+                {{ content.practicalInfo.footer.message }} 🏔️❤️
             </div>
         </div>
     </div>
