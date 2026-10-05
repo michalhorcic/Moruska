@@ -103,7 +103,7 @@ title: Jindřichův dům - Horská chata v Krkonoších
                         <tr>
                             <th>Období</th>
                             <th>Dospělý</th>
-                            <th>Dítě (2-12 let)</th>
+                            <th>Dítě (2–12 let)</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -111,7 +111,7 @@ title: Jindřichův dům - Horská chata v Krkonoších
                         <tr>
                             <td>{{ season.period }}</td>
                             <td>{{ season.adult }}</td>
-                            <td>{{ season.child }}{% if season.note %} <br><small>({{ season.note }})</small>{% endif %}</td>
+                            <td>{{ season.child }}</td>
                         </tr>
                         {% endfor %}
                     </tbody>
@@ -119,7 +119,7 @@ title: Jindřichův dům - Horská chata v Krkonoších
             </div>
 
             <div class="important-info">
-                <h3>Důležité informace</h3>
+                <h3>Podmínky a příplatky</h3>
                 <ul>
                     {% for info in content.cottage.pricing.important %}
                     <li>{{ info }}</li>
