@@ -141,19 +141,117 @@
       "website_view": "www.e-chalupy.cz/jindrichuv-dum"
     },
     "gallery": {
+      "title": "Nahlédněte k nám do hor",
+      "description": "Výhledy do Krkonoš, jednoduché horské pokoje a místo pro společné chvíle po návratu z výletu.",
       "images": [
-        "/img/gallery/1.JPG",
-        "/img/gallery/2.JPG",
-        "/img/gallery/3.JPG",
-        "/img/gallery/4.JPG",
-        "/img/gallery/5.JPG",
-        "/img/gallery/6.JPG",
-        "/img/gallery/7.JPG",
-        "/img/gallery/8.JPG",
-        "/img/gallery/9.JPG",
-        "/img/gallery/10.JPG",
-        "/img/gallery/11.JPG",
-        "/img/gallery/12.JPG"
+        {
+          "src": "/img/gallery/web/rano-nad-mlhou.webp",
+          "thumbnail": "/img/gallery/web/rano-nad-mlhou-small.webp",
+          "width": 1280,
+          "height": 960,
+          "title": "Ráno nad údolím",
+          "alt": "Jindřichův dům na horské louce nad údolím zalitým ranní mlhou",
+          "category": "Okolí chaty"
+        },
+        {
+          "src": "/img/gallery/web/zimni-panorama.webp",
+          "thumbnail": "/img/gallery/web/zimni-panorama-small.webp",
+          "width": 1280,
+          "height": 960,
+          "title": "Zimní výhled na horské hřebeny",
+          "alt": "Zasněžené horské údolí, okolní chalupy a sluncem osvětlené hřebeny Krkonoš",
+          "category": "Krkonoše v zimě"
+        },
+        {
+          "src": "/img/gallery/web/letni-vecer.webp",
+          "thumbnail": "/img/gallery/web/letni-vecer-small.webp",
+          "width": 1280,
+          "height": 960,
+          "title": "Letní večer na horách",
+          "alt": "Zelené horské louky a chalupy pod večerní oblohou",
+          "category": "Krkonoše v létě"
+        },
+        {
+          "src": "/img/gallery/web/chata-v-lete.webp",
+          "thumbnail": "/img/gallery/web/chata-v-lete-small.webp",
+          "width": 1600,
+          "height": 1070,
+          "title": "Chata mezi horskými loukami",
+          "alt": "Jindřichův dům v létě s horskými hřebeny v pozadí",
+          "category": "Okolí chaty"
+        },
+        {
+          "src": "/img/gallery/web/dvouluzkovy-pokoj.webp",
+          "thumbnail": "/img/gallery/web/dvouluzkovy-pokoj-small.webp",
+          "width": 1600,
+          "height": 1070,
+          "title": "Dvoulůžkový pokoj",
+          "alt": "Dvě oddělené postele, okno a umyvadlo v pokoji",
+          "category": "Pokoje"
+        },
+        {
+          "src": "/img/gallery/web/pokoj-s-palandou.webp",
+          "thumbnail": "/img/gallery/web/pokoj-s-palandou-small.webp",
+          "width": 1600,
+          "height": 1070,
+          "title": "Pokoj pro společný pobyt",
+          "alt": "Pokoj s postelemi a palandou pro více hostů",
+          "category": "Pokoje"
+        },
+        {
+          "src": "/img/gallery/web/kachlova-kamna.webp",
+          "thumbnail": "/img/gallery/web/kachlova-kamna-small.webp",
+          "width": 1600,
+          "height": 1070,
+          "title": "Posezení u kachlových kamen",
+          "alt": "Stůl a zelená kachlová kamna ve společné místnosti",
+          "category": "Společné chvíle"
+        },
+        {
+          "src": "/img/gallery/web/jidelna.webp",
+          "thumbnail": "/img/gallery/web/jidelna-small.webp",
+          "width": 1600,
+          "height": 1070,
+          "title": "Jídelna pro společné snídaně a večeře",
+          "alt": "Prostřená jídelna s dřevěným obložením a závěsnými světly",
+          "category": "Společné chvíle"
+        },
+        {
+          "src": "/img/gallery/web/spolecenska-mistnost.webp",
+          "thumbnail": "/img/gallery/web/spolecenska-mistnost-small.webp",
+          "width": 1600,
+          "height": 1070,
+          "title": "Večer ve společenské místnosti",
+          "alt": "Barový pult a stoly ve společenské místnosti",
+          "category": "Společné chvíle"
+        },
+        {
+          "src": "/img/gallery/web/chata-v-zime.webp",
+          "thumbnail": "/img/gallery/web/chata-v-zime-small.webp",
+          "width": 1280,
+          "height": 960,
+          "title": "Když hory přikryje sníh",
+          "alt": "Jindřichův dům mezi zasněženými smrky za jasného zimního dne",
+          "category": "Krkonoše v zimě"
+        },
+        {
+          "src": "/img/gallery/web/kvetouci-louka.webp",
+          "thumbnail": "/img/gallery/web/kvetouci-louka-small.webp",
+          "width": 1600,
+          "height": 1070,
+          "title": "Letní výhledy do Krkonoš",
+          "alt": "Kvetoucí louka před chatou s výhledem na horské údolí",
+          "category": "Krkonoše v létě"
+        },
+        {
+          "src": "/img/gallery/web/spolecne-zazemi.webp",
+          "thumbnail": "/img/gallery/web/spolecne-zazemi-small.webp",
+          "width": 1600,
+          "height": 1070,
+          "title": "Společné sociální zařízení",
+          "alt": "Toalety a umyvadlo ve společném sociálním zařízení",
+          "category": "Zázemí"
+        }
       ]
     }
   }

@@ -54,18 +54,37 @@ title: Jindřichův dům - Horská chata v Krkonoších
     </section>
 
     <!-- Gallery Section -->
-    <section class="gallery-section">
+    <section id="fotogalerie" class="gallery-section" aria-labelledby="gallery-title">
         <div class="container">
-            <h2 class="section-title">Fotogalerie</h2>
+            <p class="gallery-eyebrow">Fotogalerie</p>
+            <h2 id="gallery-title" class="section-title">{{ content.cottage.gallery.title }}</h2>
+            <p class="section-subtitle">{{ content.cottage.gallery.description }}</p>
             <div class="gallery-grid">
                 {% for image in content.cottage.gallery.images %}
-                <div class="gallery-item">
-                    <img src="{{ image }}" alt="Jindřichův dům fotografie {{ loop.index }}" loading="lazy">
-                </div>
+                <figure class="gallery-item{% if loop.first %} gallery-item-featured{% endif %}">
+                    <a class="gallery-link" href="{{ image.src }}" data-gallery-image aria-label="Zvětšit fotografii: {{ image.title }}">
+                        <img src="{{ image.thumbnail }}" srcset="{{ image.thumbnail }} 800w, {{ image.src }} {{ image.width }}w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, {% if loop.first %}66vw{% else %}33vw{% endif %}" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}" loading="lazy" decoding="async">
+                        <span class="gallery-zoom" aria-hidden="true">Zvětšit ↗</span>
+                    </a>
+                    <figcaption><span class="gallery-category">{{ image.category }}</span>{{ image.title }}</figcaption>
+                </figure>
                 {% endfor %}
             </div>
         </div>
     </section>
+    <dialog class="gallery-dialog" aria-labelledby="gallery-caption">
+        <button class="gallery-close" type="button" aria-label="Zavřít fotografii">Zavřít ×</button>
+        <figure>
+            <img class="gallery-full-image" alt="">
+            <figcaption id="gallery-caption" aria-live="polite"></figcaption>
+        </figure>
+        <div class="gallery-controls">
+            <button type="button" data-gallery-prev aria-label="Předchozí fotografie">← Předchozí</button>
+            <span class="gallery-counter"></span>
+            <button type="button" data-gallery-next aria-label="Další fotografie">Další →</button>
+        </div>
+    </dialog>
+    <script src="/js/gallery.js" defer></script>
 
     <!-- Rooms Section -->
     <section id="pokoje" class="section section-alt">
