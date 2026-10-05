@@ -5,9 +5,10 @@
       "subtitle": "Vítejte v Krkonoších • Pension v centru Krkonoš"
     },
     "accommodation": {
-      "checkIn": "od 16:00",
+      "checkIn": "od 16:00 (po domluvě i později)",
       "checkOut": "do 10:00",
-      "keyReturn": "v kuchyni"
+      "keyReturn": "v kuchyni",
+      "payment": "Platební karty nepřijímáme – platba je možná hotově nebo převodem přes QR kód."
     },
     "wifi": {
       "networkName": "jindrichuvdum_hoste",
@@ -100,47 +101,30 @@
       "description": "Standardně fungujeme s polopenzí – snídaně je formou bufetu, večeře je společná (polévka + jedno hlavní jídlo). Pro školy a skupiny umíme po domluvě zajistit i plnou penzi. Máme také bar/výčep pro ubytované hosty (provoz záleží na obsazenosti). Pokud potřebujete vegetariánskou nebo bezlepkovou variantu, ozvěte se předem – někdy to jde, ale ne vždy."
     },
     "pricing": {
-      "title": "Ceník - ubytování s polopenzí",
-      "note": "V letní i zimní sezóně u nás standardně nabízíme ubytování s polopenzí (bufetová snídaně, společná večeře). Rádi přivítáme jednotlivce, rodiny i skupiny; pro školy umíme po domluvě zajistit i plnou penzi.",
+      "title": "Ceník – ubytování s polopenzí",
+      "note": "Cena za osobu a noc včetně DPH. Polopenze zahrnuje bufetovou snídani a společnou večeři (polévka a hlavní jídlo).",
       "seasons": [
         {
-          "period": "1.12. - 13.12.",
-          "adult": "880 Kč",
-          "child": "810 Kč"
+          "period": "Zima · prosinec–březen",
+          "adult": "1 040 Kč",
+          "child": "980 Kč"
         },
         {
-          "period": "14.12. 2024 - 3.1.",
-          "adult": "980 Kč",
-          "child": "910 Kč"
+          "period": "Léto · červen–září",
+          "adult": "940 Kč",
+          "child": "900 Kč"
         },
         {
-          "period": "VÁNOCE, SILVESTR",
-          "adult": "1920 Kč",
-          "child": "1720 Kč",
-          "note": "BEZ PSŮ"
-        },
-        {
-          "period": "4.1. - 31.3. 2026",
-          "adult": "950 Kč",
-          "child": "880 Kč"
-        },
-        {
-          "period": "Letní sezóna: 1.6. - 30.9.",
-          "adult": "880 Kč",
-          "child": "800 Kč"
-        },
-        {
-          "period": "Mimo sezóna: 1.4.-31.5. a 1.10. - 30.11.",
-          "adult": "800 Kč",
-          "child": "750 Kč"
+          "period": "Mimo sezónu · duben–květen, říjen–listopad",
+          "adult": "Po domluvě",
+          "child": "Po domluvě"
         }
       ],
       "important": [
-        "Příjezd (check-in): od 16:00 (po domluvě i později).",
-        "Odjezd (check-out): nejpozději do 10:00.",
-        "Platební karty nepřijímáme – platba je možná hotově nebo převodem přes QR kód.",
-        "V uvedené ceně není zahrnut rekreační poplatek městu Pec pod Sněžkou (platí osoby starší 18 let) – 35 Kč / osoba / den.",
-        "Mimo sezónu je cena orientační – může se lišit podle obsazenosti a osobní domluvy."
+        "Silvestrovské pobyty přijímáme pouze na celý týden (7 nocí). Příplatek za silvestrovský večer stanovíme po domluvě a uvedeme v nabídce pobytu.",
+        "Mimo sezónu stanovujeme cenu individuálně podle počtu osob, délky pobytu a potřeby vytápění.",
+        "Místní poplatek z pobytu městu Pec pod Sněžkou není zahrnut v ceně.",
+        "Pro školy a skupiny umíme po domluvě zajistit i plnou penzi."
       ]
     },
     "contact": {
