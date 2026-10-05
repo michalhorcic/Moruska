@@ -1,8 +1,5 @@
 ---
 layout: layouts/base.njk
+layoutStylesheet: /css/print-a6-landscape.css
 ---
-{% block styles %}
-<link rel="stylesheet" href="/css/print-a6-landscape.css">
-{% endblock %}
-
-{% block body %}{{ content | safe }}{% endblock %}
+{{ content | safe }}
