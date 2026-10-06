@@ -103,6 +103,17 @@ Eleventy configuration is in `.eleventy.js`. Current settings:
 - `npm run serve` - Same as start
 - `npm run build` - Build static site for production
 
+## Seasonal homepage photo
+
+The homepage selects its hero photo on each page load using the current date in
+`Europe/Prague`: December–February shows the snowy cottage, March–August the
+summer cottage, and September–November the morning mist. No rebuild or deployment
+is needed at season boundaries. The script runs in the head before the stylesheet
+and body so the fallback photo does not flash first. With JavaScript disabled or
+unsupported time-zone formatting, the summer cottage remains the fallback.
+
+Run the date-boundary tests with `node --test tests/seasonal-hero.test.cjs`.
+
 ## Contact Form on Vercel
 
 The music space inquiry form posts to `/api/music-inquiry`, a Vercel serverless function that sends the message through Resend.

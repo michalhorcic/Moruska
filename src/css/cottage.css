@@ -140,7 +140,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(58, 58, 58, 0.7), rgba(184, 130, 111, 0.5)), url('/img/background/P1040173.JPG');
+    background: linear-gradient(135deg, rgba(58, 58, 58, 0.7), rgba(184, 130, 111, 0.5)), var(--hero-photo, url('/img/gallery/web/chata-v-lete.webp'));
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

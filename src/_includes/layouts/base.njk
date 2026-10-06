@@ -25,6 +25,8 @@
     <meta name="twitter:description" content="{{ pageDescription | escape }}">
     <meta name="twitter:image" content="{{ (site.url + site.image.path) | escape }}">
     <meta name="twitter:image:alt" content="{{ site.image.alt | escape }}">
+    {# Run before styles and body rendering to avoid flashing the fallback photo. #}
+    {% for script in headScripts %}<script src="{{ script | escape }}"></script>{% endfor %}
     {% if layoutStylesheet %}<link rel="stylesheet" href="{{ layoutStylesheet | escape }}">{% endif %}
     {% for stylesheet in stylesheets %}<link rel="stylesheet" href="{{ stylesheet | escape }}">{% endfor %}
     <script>
