@@ -1,0 +1,17 @@
+<nav class="nav" aria-label="Hlavní navigace" data-navigation>
+    <div class="nav-content">
+        <a class="nav-logo" href="/">{{ content.cottage.hero.title }}</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navigation-panel" hidden>Menu</button>
+        <div class="nav-panel" id="navigation-panel">
+            <div class="nav-links">
+                {% for anchor, label in [['o-chate', 'O chatě'], ['pokoje', 'Pokoje'], ['vybaveni', 'Vybavení'], ['cenik', 'Ceník'], ['kontakt', 'Kontakt']] %}
+                <a href="{% if page.url != '/' %}/{% endif %}#{{ anchor }}">{{ label }}</a>
+                {% endfor %}
+                <a href="/practical-info" class="nav-link-practical"{% if page.url == '/practical-info/' %} aria-current="page"{% endif %}>Praktické info</a>
+                <a href="/hudebni-prostor" class="nav-link-music"{% if page.url == '/hudebni-prostor/' %} aria-current="page"{% endif %}>Hudební prostor</a>
+            </div>
+            <div class="nav-phone"><a href="tel:{{ content.cottage.contact.phone | replace(" ", "") }}">{{ content.cottage.hero.phone }}</a></div>
+        </div>
+    </div>
+</nav>
+<script src="/js/navigation.js" defer></script>
