@@ -4,27 +4,12 @@ title: Jindřichův dům - Horská chata v Krkonoších
 description: "Rodinný horský penzion v Peci pod Sněžkou. Ubytování v Krkonoších s polopenzí, přímo u sjezdovek. Prohlédněte si pokoje, fotografie a ceník."
 stylesheets:
   - /css/cottage.css
+  - /css/nav.css
 headScripts:
   - /js/seasonal-hero.js
 ---
     <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-content">
-            <a class="nav-logo" href="/">{{ content.cottage.hero.title }}</a>
-            <div class="nav-links">
-                <a href="#o-chate">O chatě</a>
-                <a href="#pokoje">Pokoje</a>
-                <a href="#vybaveni">Vybavení</a>
-                <a href="#cenik">Ceník</a>
-                <a href="#kontakt">Kontakt</a>
-                <a href="/practical-info" class="nav-link-practical">Praktické info</a>
-                <a href="/hudebni-prostor" class="nav-link-music">Hudební prostor</a>
-            </div>
-            <div class="nav-phone">
-                <a href="tel:{{ content.cottage.hero.phone }}">{{ content.cottage.hero.phone }}</a>
-            </div>
-        </div>
-    </nav>
+    {% include "partials/navigation.njk" %}
 
     <!-- Hero Section -->
     <section class="hero">

@@ -6,26 +6,8 @@ stylesheets:
   - /css/nav.css
 ---
 
-<style>body { padding-top: 78px; }</style>
-
 <!-- Navigace (sdílená napříč webem) -->
-<nav class="nav" aria-label="Hlavní navigace">
-    <div class="nav-content">
-        <a class="nav-logo" href="/">Jindřichův dům</a>
-        <div class="nav-links">
-            <a href="/#o-chate">O chatě</a>
-            <a href="/#pokoje">Pokoje</a>
-            <a href="/#vybaveni">Vybavení</a>
-            <a href="/#cenik">Ceník</a>
-            <a href="/#kontakt">Kontakt</a>
-            <a href="/practical-info" class="nav-link-practical" aria-current="page">Praktické info</a>
-            <a href="/hudebni-prostor" class="nav-link-music">Hudební prostor</a>
-        </div>
-        <div class="nav-phone">
-            <a href="tel:+420739655826">739 655 826</a>
-        </div>
-    </div>
-</nav>
+{% include "partials/navigation.njk" %}
 
 <div class="container">
     <!-- HEADER -->
