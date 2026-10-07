@@ -1,0 +1,140 @@
+{
+  "title": "Praktické informace pro váš pobyt",
+  "intro": "Co si přibalit, kdy přijet a kde najít potřebné informace. Pokud si s něčím nebudete jistí, ozvěte se nám.",
+  "cards": [
+    {
+      "title": "Co si vzít s sebou",
+      "icon": "🧳",
+      "items": [
+        {
+          "label": "Přezůvky a ručníky",
+          "text": "Přibalte si prosím přezůvky a vlastní ručníky. V celé chatě chodíme v přezůvkách."
+        },
+        {
+          "label": "Povlečení",
+          "text": "Postele jsou povlečené, vlastní lůžkoviny vozit nemusíte."
+        },
+        {
+          "label": "Pokyny k příjezdu",
+          "text": "Podrobnosti k dopravě a příjezdu vám pošleme e-mailem před pobytem."
+        }
+      ]
+    },
+    {
+      "title": "Příjezd a odjezd",
+      "icon": "🔑",
+      "items": [
+        {
+          "label": "Příjezd",
+          "text": "Od 16:00. Jiný čas s námi prosím domluvte předem."
+        },
+        {
+          "label": "Odjezd",
+          "text": "Do 10:00. Klíče nám při odjezdu vraťte na domluveném místě."
+        },
+        {
+          "label": "Vstup do chaty",
+          "text": "Kód ke vstupu vám řekneme při příjezdu. Klíč od vstupních dveří máte na svazku s klíčem od pokoje."
+        },
+        {
+          "label": "Zavazadla",
+          "text": "Chcete ještě vyrazit na výlet? Po předchozí domluvě si můžete zavazadla nechat na domluveném místě."
+        }
+      ]
+    },
+    {
+      "title": "Platba",
+      "icon": "💳",
+      "items": [
+        {
+          "label": "Jak zaplatit",
+          "text": "Zaplatit můžete hotově nebo převodem pomocí QR kódu. Platební karty nepřijímáme."
+        }
+      ]
+    },
+    {
+      "title": "Časy jídel",
+      "icon": "🍽️",
+      "items": [
+        {
+          "label": "Snídaně",
+          "text": "V 8:00."
+        },
+        {
+          "label": "Večeře",
+          "text": "V 18:00."
+        },
+        {
+          "label": "Snídaně na cestu",
+          "text": "Po předchozí domluvě, za příplatek."
+        },
+        {
+          "label": "Diety a alergie",
+          "text": "Dietní požadavky a potravinové alergie nám prosím oznamte předem, abychom s vámi mohli potvrdit možnosti stravování."
+        }
+      ]
+    },
+    {
+      "title": "Během dne",
+      "icon": "☕",
+      "items": [
+        {
+          "label": "Voda na pití",
+          "text": "Voda je v celé chatě pitná. Na pokojích může mít mírně železitou chuť. Vodu na pití si můžete natočit také z označené pípy na baru."
+        },
+        {
+          "label": "Čaj a káva",
+          "text": "Čaj a káva jsou k dispozici v samoobslužném baru."
+        },
+        {
+          "label": "Lednice",
+          "text": "V jídelně najdete menší lednici určenou pro hosty."
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "label": "Mokré věci",
+      "text": "Mokré oblečení a obuv sušte v lyžárně."
+    },
+    {
+      "label": "Noční klid",
+      "text": "Od 22:00 do 7:00. Pro skupinu s celou chatou lze jiný režim domluvit předem s ohledem na okolí."
+    },
+    {
+      "label": "Kouření",
+      "text": "Uvnitř se nekouří, ani elektronické cigarety. Venku využijte vyhrazené místo."
+    },
+    {
+      "label": "Kamna",
+      "text": "O přikládání do kamen se staráme my."
+    },
+    {
+      "label": "Odpad",
+      "text": "Papír a plast třídíme na každém patře, ostatní odpad v přízemí."
+    }
+  ],
+  "contactIntro": "Pokud vám něco chybí nebo nefunguje, dejte nám vědět během pobytu, abychom to mohli vyřešit.",
+  "emergencyContacts": [
+    {
+      "label": "Tísňová linka",
+      "number": "112"
+    },
+    {
+      "label": "Záchranná služba",
+      "number": "155"
+    },
+    {
+      "label": "Hasiči",
+      "number": "150"
+    },
+    {
+      "label": "Horská služba",
+      "number": "1210"
+    }
+  ],
+  "registrationTitle": "Registrace hostů",
+  "registrationText": "Prosím vyplňte údaje potřebné k evidenci pobytu. Formulář otevřete tlačítkem nebo naskenováním QR kódu.",
+  "footer": "Užijte si pobyt u nás."
+}
