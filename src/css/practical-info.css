@@ -1,0 +1,9 @@
+.practical-page { margin-top: 24px; }
+.practical-page .header h1 { font-size: clamp(1.8rem, 4vw, 3rem); }
+.practical-page .card { min-width: 0; }
+.practical-contacts { margin-bottom: 30px; }
+.practical-contacts h3 { margin: 24px 0 12px; }
+.host-phone { font-size: 1.5rem; margin: 12px 0; }
+.practical-page a { color: var(--primary-color); }
+.registration-link { display: inline-block; padding: 12px 20px; margin: 20px 0; background: var(--secondary-color); border-radius: 8px; font-weight: 600; }
+.practical-page a:focus-visible { outline: 3px solid var(--accent-color); outline-offset: 4px; }
