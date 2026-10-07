@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-title: Jindřichův dům - Horská chata v Krkonoších
+title: Jindřichův dům | Rodinný horský penzion v Krkonoších
 description: "Rodinný horský penzion v Peci pod Sněžkou. Ubytování v Krkonoších s polopenzí, přímo u sjezdovek. Prohlédněte si pokoje, fotografie a ceník."
 stylesheets:
   - /css/cottage.css
@@ -18,9 +18,10 @@ headScripts:
             <h1 class="hero-title">{{ content.cottage.hero.title }}</h1>
             <p class="hero-subtitle">{{ content.cottage.hero.subtitle }}</p>
             <p class="hero-location">{{ content.cottage.hero.location }}</p>
+            <p class="hero-tagline">{{ content.cottage.hero.tagline }}</p>
             <div class="hero-cta">
-                <a href="tel:{{ content.cottage.hero.phone }}" class="btn btn-primary">Zavolejte nám</a>
-                <a href="#cenik" class="btn btn-secondary">Zobrazit ceník</a>
+                <a href="#kontakt" class="btn btn-primary">Domluvit pobyt</a>
+                <a href="#cenik" class="btn btn-secondary">Prohlédnout ceník</a>
             </div>
         </div>
     </section>
@@ -29,7 +30,9 @@ headScripts:
     <section id="o-chate" class="section">
         <div class="container-narrow">
             <h2 class="section-title">{{ content.cottage.basicInfo.title }}</h2>
-            <p class="section-text">{{ content.cottage.basicInfo.description }}</p>
+            {% for paragraph in content.cottage.basicInfo.paragraphs %}
+            <p class="section-text">{{ paragraph }}</p>
+            {% endfor %}
         </div>
     </section>
 
@@ -70,7 +73,18 @@ headScripts:
     <section id="pokoje" class="section section-alt">
         <div class="container-narrow">
             <h2 class="section-title">{{ content.cottage.rooms.title }}</h2>
-            <p class="section-text">{{ content.cottage.rooms.description }}</p>
+            {% for paragraph in content.cottage.rooms.paragraphs %}
+            <p class="section-text">{{ paragraph }}</p>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section id="skupiny" class="section section-alt">
+        <div class="container-narrow">
+            <h2 class="section-title">{{ content.cottage.groups.title }}</h2>
+            {% for paragraph in content.cottage.groups.paragraphs %}
+            <p class="section-text">{{ paragraph }}</p>
+            {% endfor %}
         </div>
     </section>
 
@@ -78,7 +92,10 @@ headScripts:
     <section id="vybaveni" class="section">
         <div class="container-narrow">
             <h2 class="section-title">{{ content.cottage.facilities.title }}</h2>
-            <p class="section-text">{{ content.cottage.facilities.description }}</p>
+            {% for paragraph in content.cottage.facilities.paragraphs %}
+            <p class="section-text">{{ paragraph }}</p>
+            {% endfor %}
+            <p class="section-text"><a href="/hudebni-prostor">Prohlédnout hudební prostor</a></p>
         </div>
     </section>
 
@@ -86,7 +103,9 @@ headScripts:
     <section class="section section-alt">
         <div class="container-narrow">
             <h2 class="section-title">{{ content.cottage.dining.title }}</h2>
-            <p class="section-text">{{ content.cottage.dining.description }}</p>
+            {% for paragraph in content.cottage.dining.paragraphs %}
+            <p class="section-text">{{ paragraph }}</p>
+            {% endfor %}
         </div>
     </section>
 
@@ -118,7 +137,7 @@ headScripts:
             </div>
 
             <div class="important-info">
-                <h3>Podmínky a příplatky</h3>
+                <h3>Další informace k cenám</h3>
                 <ul>
                     {% for info in content.cottage.pricing.important %}
                     <li>{{ info }}</li>
@@ -132,7 +151,11 @@ headScripts:
     <section id="kontakt" class="section section-alt contact-section">
         <div class="container-narrow">
             <h2 class="section-title">{{ content.cottage.contact.title }}</h2>
-            <p class="section-text">Máte dotazy k pobytu nebo chcete rezervaci? Zavolejte nám – domluvíme se.</p>
+            <p class="section-text">{{ content.cottage.contact.description }}</p>
+            <div class="hero-cta contact-cta">
+                <a href="mailto:{{ content.cottage.hero.email }}" class="btn btn-primary">Napsat e-mail</a>
+                <a href="tel:{{ content.cottage.hero.phone }}" class="btn btn-primary">Zavolat</a>
+            </div>
             <div class="contact-info">
                 <div class="contact-item">
                     <h3>{{ content.cottage.contact.name }}</h3>
@@ -140,7 +163,7 @@ headScripts:
                 </div>
                 <div class="contact-item">
                     <p><strong>Telefon:</strong> <a href="tel:{{ content.cottage.hero.phone }}">{{ content.cottage.contact.phone }}</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:{{ content.cottage.hero.email }}">{{ content.cottage.contact.email }}</a></p>
+                    <p><strong>E-mail:</strong> <a href="mailto:{{ content.cottage.hero.email }}">{{ content.cottage.contact.email }}</a></p>
                     <p><strong>Další prezentace:</strong> <a href="https://{{ content.cottage.contact.website }}" target="_blank">{{ content.cottage.contact.website_view }}</a></p>
                 </div>
                 <div class="contact-item">
@@ -157,6 +180,6 @@ headScripts:
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Jindřichův dům. Všechna práva vyhrazena.</p>
-            <p><a href="/ubytovaci-rad/" style="color: inherit;">Ubytovací řád</a></p>
+            <p><a href="/practical-info" style="color: inherit;">Praktické informace</a> · <a href="/ubytovaci-rad/" style="color: inherit;">Ubytovací řád</a></p>
         </div>
     </footer>

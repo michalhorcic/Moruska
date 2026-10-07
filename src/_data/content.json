@@ -82,27 +82,42 @@
       "subtitle": "Rodinný horský penzion v Krkonoších",
       "location": "Pec pod Sněžkou, 1 030 m n. m.",
       "phone": "739 655 826",
-      "email": "jindrichuvdum@jindrichuvdum.cz"
+      "email": "jindrichuvdum@jindrichuvdum.cz",
+      "tagline": "Pohoda, česká domácí kuchyně a pár dní v klidu hor."
     },
     "basicInfo": {
-      "title": "Základní info",
-      "description": "Jindřichův dům je menší rodinný horský penzion v Peci pod Sněžkou (1 030 m n. m.), přímo v srdci Krkonoš. Máme rádi osobní přístup – rádi poradíme s výlety, domluvíme se na detailech pobytu a (pokud to jde) vyjdeme vstříc Vašim přáním. Zároveň je dobré počítat s tím, že nejsme velký hotel se stálou recepcí a restaurací à la carte – fungujeme v horském režimu a některé věci jsou možné pouze po domluvě. V zimě oceníte polohu u sjezdovek SkiResortu Pec pod Sněžkou – vleky Eso a Mulda jsou přímo před chatou."
+      "title": "Vítejte u nás",
+      "paragraphs": [
+        "Jsme Michal a Lucka a o Jindřichův dům se většinu času staráme sami jako rodina. Michal vaří, Lucka vás přivítá a domluví s vámi podrobnosti pobytu. Naše malá dcera nám zatím „pomáhá“ po svém.",
+        "Máme rádi pohodu, osobní přístup a klid v horách. Rádi vám poradíme s výletem a společně domluvíme, co budete během pobytu potřebovat.",
+        "V zimě oceníte vleky Eso a Mulda přímo před chatou. V létě můžete vyrazit na výlety do Krkonoš rovnou od nás."
+      ]
     },
     "rooms": {
       "title": "Pokoje",
-      "description": "Celková kapacita penzionu je 45 osob. Ubytujeme Vás ve 2–6lůžkových pokojích – jednoduše, účelně a po horsku. Na každém pokoji je umyvadlo s teplou a studenou vodou, sociální zařízení je společné na patře. Pokud máte specifické požadavky (dětská postýlka, pes, pozdní příjezd apod.), dejte nám prosím vědět předem – rádi se pokusíme vyhovět, když to provoz dovolí."
+      "paragraphs": [
+        "Ubytujeme vás ve 2–6lůžkových pokojích s celkovou kapacitou 45 hostů. Pokoje jsou jednoduše a účelně zařízené. Každý má umyvadlo s teplou a studenou vodou, sprchy a toalety jsou společné na patře.",
+        "Dětskou postýlku vám můžeme zajistit po předchozí domluvě. Pokud plánujete přijet se psem nebo máte jiné přání, ozvěte se předem. Možnosti s vámi probereme při domluvě pobytu."
+      ]
     },
     "facilities": {
-      "title": "Vybavení",
-      "description": "V prostorné herně si můžete zahrát ping-pong, stolní fotbálek a kulečník. Lze zde také využít videoprojekci. Pro malé děti máme na chatě dětský koutek s různými hračkami."
+      "title": "Po návratu z hor",
+      "paragraphs": [
+        "V prostorné herně si můžete zahrát ping-pong, stolní fotbálek nebo kulečník. K dispozici je také videoprojekce a pro malé děti dětský koutek s hračkami.",
+        "Večer můžete posedět ve společenské místnosti nebo u baru. Pokud chcete pobyt spojit s hraním a hudební tvorbou, podívejte se také na náš hudební prostor."
+      ]
     },
     "dining": {
-      "title": "Stravování",
-      "description": "Standardně fungujeme s polopenzí – snídaně je formou bufetu, večeře je společná (polévka + jedno hlavní jídlo). Pro školy a skupiny umíme po domluvě zajistit i plnou penzi. Máme také bar/výčep pro ubytované hosty (provoz záleží na obsazenosti). Pokud potřebujete vegetariánskou nebo bezlepkovou variantu, ozvěte se předem – někdy to jde, ale ne vždy."
+      "title": "Česká domácí kuchyně",
+      "paragraphs": [
+        "V kuchyni se o vás stará Michal. Pobyty nabízíme s polopenzí — ráno vás čeká bufetová snídaně a večer polévka a hlavní jídlo z české domácí kuchyně.",
+        "Pokud potřebujete vegetariánskou nebo bezlepkovou stravu, dejte nám vědět předem. Snažíme se vyhovět; konkrétní možnosti vám potvrdíme při domluvě pobytu.",
+        "Bar pro ubytované hosty funguje většinu času samoobslužně. Po večeři se snažíme vyhovět i složitějším přáním, podle aktuálních možností."
+      ]
     },
     "pricing": {
-      "title": "Ceník – ubytování s polopenzí",
-      "note": "Cena za osobu a noc včetně DPH. Polopenze zahrnuje bufetovou snídani a společnou večeři (polévka a hlavní jídlo).",
+      "title": "Ceník ubytování s polopenzí",
+      "note": "Ceny jsou za osobu a noc včetně DPH. Zahrnují ubytování, bufetovou snídani a večeři s polévkou a hlavním jídlem.",
       "seasons": [
         {
           "period": "Zima · prosinec–březen",
@@ -121,14 +136,15 @@
         }
       ],
       "important": [
-        "Silvestrovské pobyty přijímáme pouze na celý týden (7 nocí). Příplatek za silvestrovský večer stanovíme po domluvě a uvedeme v nabídce pobytu.",
-        "Mimo sezónu stanovujeme cenu individuálně podle počtu osob, délky pobytu a potřeby vytápění.",
-        "Místní poplatek z pobytu městu Pec pod Sněžkou není zahrnut v ceně.",
-        "Pro školy a skupiny umíme po domluvě zajistit i plnou penzi."
+        "Dítě do dvou let je zdarma bez nároku na postel. Dětskou postýlku můžeme zajistit po předchozí domluvě.",
+        "Mimo sezonu připravujeme nabídku podle počtu hostů, délky pobytu a potřeby vytápění.",
+        "Silvestrovské pobyty nabízíme na celý týden, tedy 7 nocí. Příplatek za silvestrovský večer uvedeme v nabídce.",
+        "Místní poplatek z pobytu městu Pec pod Sněžkou není zahrnutý v ceně.",
+        "Plnou penzi pro školy a skupiny naceníme při domluvě pobytu."
       ]
     },
     "contact": {
-      "title": "Kontakt",
+      "title": "Domluvte si pobyt",
       "name": "Chata JINDŘICHŮV DŮM",
       "address": "542 21 Pec pod Sněžkou 24",
       "phone": "+420 739 655 826",
@@ -138,11 +154,12 @@
       "ico": "23741457",
       "dic": "CZ23741457",
       "website": "www.e-chalupy.cz/ubytovani-pec-pod-snezkou-jindrichuv-dum-o21522",
-      "website_view": "www.e-chalupy.cz/jindrichuv-dum"
+      "website_view": "www.e-chalupy.cz/jindrichuv-dum",
+      "description": "Napište nám, kdy chcete přijet a kolik vás bude, nebo zavolejte. Probereme s vámi podrobnosti a společně domluvíme váš pobyt."
     },
     "gallery": {
       "title": "Nahlédněte k nám do hor",
-      "description": "Výhledy do Krkonoš, jednoduché horské pokoje a místo pro společné chvíle po návratu z výletu.",
+      "description": "Výhledy do Krkonoš, jednoduché horské pokoje a zázemí pro odpočinek po návratu z výletu.",
       "images": [
         {
           "src": "/img/gallery/web/rano-nad-mlhou.webp",
@@ -252,6 +269,14 @@
           "alt": "Toalety a umyvadlo ve společném sociálním zařízení",
           "category": "Zázemí"
         }
+      ]
+    },
+    "groups": {
+      "title": "Celá chata pro vaši skupinu",
+      "paragraphs": [
+        "Plánujete pobyt s přáteli, školou nebo větší skupinou? Přibližně od 30 osob má smysl domluvit si celou chatu pro sebe.",
+        "Budete mít společné zázemí pro svůj program i čas strávený pohromadě. Pro školy a skupiny můžeme po předchozí domluvě zajistit také plnou penzi.",
+        "Napište nám termín, počet hostů a svou představu. Společně probereme možnosti."
       ]
     }
   }

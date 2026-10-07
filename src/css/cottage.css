@@ -468,3 +468,17 @@ body:has(.gallery-dialog[open]) { overflow: hidden; }
     }
 
 }
+
+.hero-tagline {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.section-text + .section-text {
+    margin-top: 1rem;
+}
+
+.contact-cta {
+    margin: 1.5rem 0 2rem;
+}
