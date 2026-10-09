@@ -85,6 +85,13 @@ h1 {
     flex-wrap: wrap;
 }
 
+.hero__availability {
+    max-width: 610px;
+    margin-bottom: 28px;
+    color: rgba(29, 37, 32, 0.78);
+    line-height: 1.65;
+}
+
 .button {
     appearance: none;
     border: 0;
@@ -279,6 +286,8 @@ h1 {
 
 .split__visual figcaption { margin-top: 16px; }
 
+.split__copy h2 { margin-bottom: 24px; }
+
 .simple-list {
     list-style: none;
     padding: 0;
@@ -297,6 +306,8 @@ h1 {
 }
 
 .simple-list strong { color: var(--green); }
+
+.intro__copy .simple-list { margin: 24px 0; }
 
 /* ── Equipment (dark section) ── */
 .equipment {
