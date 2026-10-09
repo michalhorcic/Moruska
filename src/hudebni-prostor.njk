@@ -24,9 +24,12 @@ stylesheets:
       </div>
 
       <aside class="hero-card" aria-label="Rychlé shrnutí">
-        <div class="hero-card__image" role="img" aria-label="Ilustrační obrázek hudebního prostoru">
-          <span>nově připravujeme</span>
-        </div>
+        <img class="hero-card__image"
+          src="/img/gallery/hudebni-prostor/prostor-1280.webp"
+          srcset="/img/gallery/hudebni-prostor/prostor-640.webp 640w, /img/gallery/hudebni-prostor/prostor-1280.webp 1280w"
+          sizes="(max-width: 592px) calc(100vw - 32px), (max-width: 980px) 560px, 430px"
+          width="1280" height="960" fetchpriority="high"
+          alt="Hudební prostor s klávesami, kytarami, ozvučením a křesly pod dřevěným stropem.">
         <div class="hero-card__body">
           <h2>Hory, nástroje, společný čas.</h2>
           <p>Nejvíc to sedí menším skupinám, které chtějí vypadnout z města a pár dní se soustředit jen na hraní.</p>
@@ -84,10 +87,14 @@ stylesheets:
 
     <!-- ── Jak to může proběhnout ── -->
     <section class="section split" id="jak" aria-labelledby="how-title">
-      <div class="split__visual" aria-hidden="true">
-        <div class="visual visual--large"></div>
-        <div class="visual visual--small"></div>
-      </div>
+      <figure class="split__visual">
+        <img src="/img/gallery/hudebni-prostor/nastroje-1280.webp"
+          srcset="/img/gallery/hudebni-prostor/nastroje-640.webp 640w, /img/gallery/hudebni-prostor/nastroje-1280.webp 1280w"
+          sizes="(max-width: 980px) calc(100vw - 32px), 530px"
+          width="1280" height="960" loading="lazy" decoding="async"
+          alt="Syntezátor Oberheim, elektronika, kytary a digitální piano připravené ke hraní.">
+        <figcaption>Nástroje po ruce. Čas na vlastní nápady.</figcaption>
+      </figure>
       <div class="split__copy">
         <p class="eyebrow">Jak to může proběhnout</p>
         <h2 id="how-title">Přijet. Zabydlet se. Hrát.</h2>
@@ -140,24 +147,43 @@ stylesheets:
       </div>
     </section>
 
-    <!-- ── Galerie (placeholdery, čekají na fotky) ── -->
+    <!-- ── Galerie ── -->
     <section class="section gallery" aria-labelledby="gallery-title">
       <div class="section__center">
-        <p class="eyebrow">Fotky doplníme</p>
-        <h2 id="gallery-title">Tady budou reálné fotky prostoru.</h2>
+        <p class="eyebrow">Nahlédněte dovnitř</p>
+        <h2 id="gallery-title">Prostor pro hudbu i společný čas.</h2>
+        <p>Nástroje, pohodlná křesla a večerní světlo. Takhle to u nás vypadá.</p>
       </div>
       <div class="gallery-grid">
         <figure>
-          <div class="gallery-placeholder gallery-placeholder--room"></div>
-          <figcaption>místnost s nástroji</figcaption>
+          <a class="gallery-link" href="/img/gallery/hudebni-prostor/misto-pro-hrani-1280.webp" data-gallery-image aria-label="Zvětšit fotografii: místo pro společné hraní">
+            <img src="/img/gallery/hudebni-prostor/misto-pro-hrani-640.webp"
+              srcset="/img/gallery/hudebni-prostor/misto-pro-hrani-640.webp 640w, /img/gallery/hudebni-prostor/misto-pro-hrani-1280.webp 1280w"
+              sizes="(max-width: 760px) calc(100vw - 32px), (max-width: 1192px) calc((100vw - 68px) / 3), 375px"
+              width="1280" height="960" loading="lazy" decoding="async"
+              alt="Kytary, syntezátor a piano kolem volného místa na koberci, s mikrofonem a reproduktory.">
+          </a>
+          <figcaption>Místo pro společné hraní</figcaption>
         </figure>
         <figure>
-          <div class="gallery-placeholder gallery-placeholder--people"></div>
-          <figcaption>společné hraní</figcaption>
+          <a class="gallery-link" href="/img/gallery/hudebni-prostor/vecerni-atmosfera-1280.webp" data-gallery-image aria-label="Zvětšit fotografii: večerní atmosféra">
+            <img src="/img/gallery/hudebni-prostor/vecerni-atmosfera-640.webp"
+              srcset="/img/gallery/hudebni-prostor/vecerni-atmosfera-640.webp 640w, /img/gallery/hudebni-prostor/vecerni-atmosfera-1280.webp 1280w"
+              sizes="(max-width: 760px) calc(100vw - 32px), (max-width: 1192px) calc((100vw - 68px) / 3), 375px"
+              width="1280" height="960" loading="lazy" decoding="async"
+              alt="Hudební místnost s nástroji a křesly při tlumeném modrém a teplém večerním osvětlení.">
+          </a>
+          <figcaption>Večerní atmosféra</figcaption>
         </figure>
         <figure>
-          <div class="gallery-placeholder gallery-placeholder--detail"></div>
-          <figcaption>večerní atmosféra</figcaption>
+          <a class="gallery-link" href="/img/gallery/hudebni-prostor/spolecne-zazemi-1280.webp" data-gallery-image aria-label="Zvětšit fotografii: chvíle mezi hraním">
+            <img src="/img/gallery/hudebni-prostor/spolecne-zazemi-640.webp"
+              srcset="/img/gallery/hudebni-prostor/spolecne-zazemi-640.webp 640w, /img/gallery/hudebni-prostor/spolecne-zazemi-1280.webp 1280w"
+              sizes="(max-width: 760px) calc(100vw - 32px), (max-width: 1192px) calc((100vw - 68px) / 3), 375px"
+              width="1280" height="960" loading="lazy" decoding="async"
+              alt="Kulečníkový stůl ve společné místnosti, za ním křesla a hudební nástroje.">
+          </a>
+          <figcaption>Chvíle mezi hraním</figcaption>
         </figure>
       </div>
     </section>
@@ -196,6 +222,20 @@ stylesheets:
     </section>
 
   </main>
+
+  <dialog class="gallery-dialog" aria-labelledby="gallery-caption">
+    <button class="gallery-close" type="button" aria-label="Zavřít fotografii">Zavřít ×</button>
+    <figure>
+      <img class="gallery-full-image" alt="">
+      <figcaption id="gallery-caption"></figcaption>
+    </figure>
+    <div class="gallery-controls">
+      <button type="button" data-gallery-prev aria-label="Předchozí fotografie">← Předchozí</button>
+      <span class="gallery-counter"></span>
+      <button type="button" data-gallery-next aria-label="Další fotografie">Další →</button>
+    </div>
+  </dialog>
+  <script src="/js/gallery.js" defer></script>
 
   <footer class="music-footer">
     &copy; 2025 Jindřichův dům ·
