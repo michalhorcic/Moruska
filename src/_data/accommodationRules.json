@@ -53,10 +53,14 @@
       "number": 5,
       "title": "Používání baru",
       "paragraphs": [
-        "Pravidla používání baru pro hosty doplníme později.",
+        "Bar funguje samoobslužně a obsluhují jej pouze dospělí hosté od 18 let. Odebrané nápoje si hosté průběžně zapisují a útratu hradí samostatně na konci pobytu.",
         "Pro školy funguje bar podle dohody s provozovatelem."
       ],
-      "items": []
+      "items": [],
+      "link": {
+        "url": "/samoobsluzny-bar/",
+        "text": "Podrobnosti najdete v pravidlech samoobslužného baru."
+      }
     },
     {
       "id": "cast-6",

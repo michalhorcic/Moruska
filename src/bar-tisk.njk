@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+title: Samoobslužný bar – verze pro tisk | Jindřichův dům
+permalink: /samoobsluzny-bar/tisk/index.html
+description: Samostatná tisková verze pravidel samoobslužného baru Jindřichova domu.
+stylesheets:
+  - /css/ubytovaci-rad.css
+  - /css/bar.css
+---
+<nav class="print-controls page-width" aria-label="Tisk pravidel baru">
+    <a href="/samoobsluzny-bar/">Zpět na stránku baru</a>
+    <button type="button" id="print-bar">Vytisknout / uložit do PDF</button>
+    <p>Formát A4 na výšku. Pro čistý výtisk vypněte v nastavení tisku záhlaví a zápatí prohlížeče.</p>
+</nav>
+<main class="page-width bar-page">
+    {% include "partials/bar-rules.njk" %}
+</main>
+<script src="/js/bar-print.js" defer></script>

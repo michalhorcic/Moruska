@@ -1,0 +1,25 @@
+.bar-page { max-width: 850px; }
+.bar-page .intro { padding-top: 20px; }
+.bar-actions { margin-top: 28px; text-align: right; }
+.adult-note { background: #eaf0e7; border-left: 3px solid #687663; padding: 16px 20px; }
+.bar-rules ol { padding-left: 22px; }
+.bar-rules ul, .bar-rules ol { margin-bottom: 16px; }
+.print-controls { padding-block: 24px; }
+.print-controls button { margin: 12px; padding: 10px 16px; background: #3a3a3a; color: white; border: 0; border-radius: 4px; font: inherit; cursor: pointer; }
+.print-controls button:focus-visible { outline: 3px solid #904027; outline-offset: 4px; }
+.print-controls p { margin: 0; font-size: .9rem; }
+@page { size: A4 portrait; margin: 15mm; }
+@media print {
+    .print-controls, .bar-actions { display: none; }
+    .bar-page { max-width: none; }
+    .bar-page .intro { padding: 0; }
+    .bar-page .eyebrow { margin: 0 0 5mm; color: black; }
+    .bar-page h1 { margin: 0 0 5mm; }
+    .bar-page .lead { font-size: 10pt; }
+    .adult-note { background: none; border-color: black; padding: 3mm; }
+    .bar-rules h2 { font-size: 13pt; margin-bottom: 3mm; }
+    .bar-rules section { padding-block: 4mm; break-inside: avoid; }
+    .bar-rules p, .bar-rules li { margin-bottom: 2mm; }
+    .bar-rules ul, .bar-rules ol { margin-block: 2mm; }
+    .bar-rules .closing { color: black; }
+}
