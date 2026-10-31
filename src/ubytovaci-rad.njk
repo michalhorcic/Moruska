@@ -33,6 +33,7 @@ stylesheets:
                 <section id="{{ section.id }}" aria-labelledby="nadpis-{{ section.id }}">
                     <h2 id="nadpis-{{ section.id }}"><span>{{ section.number }}.</span> {{ section.title }}</h2>
                     {% for paragraph in section.paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
+                    {% if section.link %}<p><a href="{{ section.link.url }}">{{ section.link.text }}</a></p>{% endif %}
                     {% if section.items.length %}<ul>{% for item in section.items %}<li>{{ item }}</li>{% endfor %}</ul>{% endif %}
                 </section>
                 {% endfor %}

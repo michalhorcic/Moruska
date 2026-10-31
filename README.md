@@ -124,3 +124,15 @@ Set these environment variables in Vercel:
 - `CONTACT_FROM_EMAIL` - verified sender, for example `Jindrichuv dum <studio@jindrichuvdum.cz>`
 
 The form messages are delivered to `jindrichuvdum@jindrichuvdum.cz`.
+
+## Samoobslužný bar
+
+Pravidla baru jsou uložena v `src/_data/barRules.json`. Společná šablona
+`src/_includes/partials/bar-rules.njk` je vykresluje na `/samoobsluzny-bar/`
+i `/samoobsluzny-bar/tisk/`. Tisková verze obsahuje jen pravidla baru;
+tlačítko otevře tisk prohlížeče, kde lze také uložit PDF (A4 na výšku).
+Pro čistý výtisk vypněte záhlaví a zápatí prohlížeče.
+
+Odkazy vedou z praktických informací a z části 5 ubytovacího řádu.
+Údaj o baru na tiskových kartičkách se upravuje v
+`content.practicalInfo.meals.bar` v `src/_data/content.json`.

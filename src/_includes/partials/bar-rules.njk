@@ -1,0 +1,21 @@
+<header class="intro">
+    <p class="eyebrow">Jindřichův dům · Informace pro hosty</p>
+    <h1>{{ barRules.title }}</h1>
+    <p class="lead">{{ barRules.intro }}</p>
+    <p class="adult-note"><strong>{{ barRules.adults }}</strong> {{ barRules.adultNote }}</p>
+</header>
+<div class="rules-text bar-rules">
+    {% for section in barRules.sections %}
+    <section id="{{ section.id }}" aria-labelledby="nadpis-{{ section.id }}">
+        <h2 id="nadpis-{{ section.id }}">{{ section.title }}</h2>
+        {% for paragraph in section.paragraphs %}<p>{{ paragraph | safe }}</p>{% endfor %}
+        {% if section.items.length %}
+        {% if section.ordered %}<ol>{% else %}<ul>{% endif %}
+            {% for item in section.items %}<li>{{ item | safe }}</li>{% endfor %}
+        {% if section.ordered %}</ol>{% else %}</ul>{% endif %}
+        {% endif %}
+        {% for paragraph in section.after %}<p>{{ paragraph | safe }}</p>{% endfor %}
+    </section>
+    {% endfor %}
+    <p class="closing">{{ barRules.closing }}</p>
+</div>

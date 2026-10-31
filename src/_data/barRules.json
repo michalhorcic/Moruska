@@ -1,0 +1,99 @@
+{
+  "title": "Samoobslužný bar",
+  "intro": "Bar je vám k dispozici během pobytu. Najdete zde čepované pivo, nápoje v lednici, víno, destiláty a kávovar. Aktuální nabídka se může měnit.",
+  "adults": "Bar obsluhují pouze dospělí hosté od 18 let.",
+  "adultNote": "Dětem a mladistvým nápoje připraví a zapíše jejich dospělý doprovod. Alkoholické nápoje jsou určeny výhradně osobám od 18 let.",
+  "closing": "Děkujeme, že si svou útratu poctivě zapisujete a pomáháte udržovat bar příjemný pro všechny.",
+  "sections": [
+    {
+      "id": "jak-to-funguje",
+      "title": "Jak to funguje",
+      "paragraphs": [],
+      "items": [
+        "<strong>Vytvořte si účet na tabletu.</strong> Může být pro jednoho hosta, pokoj, rodinu nebo celou skupinu — zvolte si, co vám vyhovuje. Účet pojmenujte tak, abyste jej snadno poznali, například „Novákovi – pokoj 5“.",
+        "<strong>Každý odebraný nápoj i připravenou kávu si hned zapište.</strong> Vyberte odpovídající kategorii a počet kusů. Nabídka v tabletu je zjednodušená, proto se řiďte označením nápojů a ceníkem u baru.",
+        "<strong>Útratu zapisujte na svůj účet nebo na společný účet, na jehož používání jste domluveni.</strong> U společného účtu si určete, kdo jej před odjezdem zkontroluje a uhradí.",
+        "<strong>Útratu za bar uhraďte na konci pobytu.</strong> Platí se samostatně, nezávisle na platbě za ubytování."
+      ],
+      "after": [],
+      "ordered": true
+    },
+    {
+      "id": "papir",
+      "title": "Když vám lépe vyhovuje papír",
+      "paragraphs": [
+        "Místo tabletu můžete použít připravený papírový lístek. Uveďte na něj:"
+      ],
+      "items": [
+        "jméno nebo název účtu,",
+        "odebranou položku,",
+        "počet kusů."
+      ],
+      "after": [
+        "Lístek nechte na určeném místě u baru a my údaje následně přepíšeme do tabletu. <strong>Pro každý odběr zvolte jen jeden způsob zápisu — tablet, nebo papír</strong>, aby se útrata nezapočítala dvakrát.",
+        "Pokud se při zápisu spletete, nevíte, kterou kategorii vybrat, nebo tablet nefunguje, dejte nám vědět. Rádi vám pomůžeme."
+      ],
+      "ordered": false
+    },
+    {
+      "id": "duvera",
+      "title": "Bar funguje na důvěře",
+      "paragraphs": [
+        "Díky tomu, že si každý svou útratu poctivě a včas zapisuje, může bar fungovat samoobslužně a bez čekání na obsluhu.",
+        "Při doplňování průběžně porovnáváme zásoby se zápisy v tabletu a na lístcích. Pokud se objeví výraznější rozdíl, požádáme hosty nebo vedoucího skupiny o kontrolu a doplnění zápisů. Při opakovaných nebo velkých nesrovnalostech můžeme samoobslužný provoz omezit nebo ukončit."
+      ],
+      "items": [],
+      "after": [],
+      "ordered": false
+    },
+    {
+      "id": "vybaveni",
+      "title": "Používání vybavení",
+      "paragraphs": [],
+      "items": [
+        "Pivo si načepujte, nápoje vyberte z lednice a kávu připravte v kávovaru.",
+        "Péči o pivní sudy, vedení, tlakovou lahev a nastavení výčepu nechte na nás. Pokud pivo dojde nebo se špatně čepuje, dejte nám vědět.",
+        "Kávovar používejte v připraveném nastavení. Změnu nastavení nebo použití vlastních surovin s námi prosím předem domluvte.",
+        "Když něco dojde, nefunguje, rozbije se nebo se rozlije, dejte nám prosím hned vědět, abychom se o to mohli postarat.",
+        "S vybavením zacházejte šetrně a po použití po sobě ukliďte, aby byl bar připravený i pro další hosty."
+      ],
+      "after": [],
+      "ordered": false
+    },
+    {
+      "id": "nadobi",
+      "title": "Sklenice a nádobí",
+      "paragraphs": [
+        "Ostřik slouží k průběžnému opláchnutí sklenice během jejího používání. Důkladné umytí pak zajistíme v kuchyni v myčce.",
+        "Použité sklenice a ostatní špinavé nádobí proto odkládejte na označené místo. Mezi čisté nádobí patří až po umytí."
+      ],
+      "items": [],
+      "after": [],
+      "ordered": false
+    },
+    {
+      "id": "konzumace",
+      "title": "Kde si nápoje vychutnat",
+      "paragraphs": [
+        "Nápoje ze samoobslužného baru si prosím vychutnávejte ve společných prostorách, zejména v jídelně a u baru. Nápoje i barové sklenice zůstávají v těchto prostorách; na pokoje se nenosí."
+      ],
+      "items": [],
+      "after": [],
+      "ordered": false
+    },
+    {
+      "id": "bezpecnost",
+      "title": "Bezpečnost a ohleduplnost",
+      "paragraphs": [],
+      "items": [
+        "Bar včetně výčepu a kávovaru obsluhují pouze dospělí hosté od 18 let. Alkoholické nápoje jsou určeny výhradně osobám od 18 let.",
+        "Za dohled nad dětmi a mladistvými odpovídá jejich dospělý doprovod, u školních pobytů pedagogický dozor.",
+        "Dopřejte si nápoje s mírou a s ohledem na ostatní. Každý host odpovídá za svou konzumaci a své chování.",
+        "Pokud chování hosta ohrožuje ostatní, vybavení domu nebo bezpečný provoz, můžeme mu používání baru omezit.",
+        "Také u baru dodržujte noční klid <strong>od 22:00 do 7:00</strong>, pokud pro skupinu s výhradním užíváním domu nebyl předem dohodnut jiný režim."
+      ],
+      "after": [],
+      "ordered": false
+    }
+  ]
+}

@@ -39,7 +39,7 @@
             font-family: 'Arial', sans-serif;
             width: 148.5mm;
             height: 105mm;
-            padding: 4mm;
+            padding: 3mm;
             background: white;
             color: #333;
             font-size: 9pt;
@@ -71,19 +71,19 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 5mm;
-            height: calc(100% - 32px);
+            height: calc(100% - 50px);
         }
         
         .left-column {
             display: flex;
             flex-direction: column;
-            gap: 3px;
+            gap: 1px;
         }
         
         .right-column {
             display: flex;
             flex-direction: column;
-            gap: 3px;
+            gap: 1px;
         }
         
         .section {
@@ -98,7 +98,7 @@
             border-bottom: 1.5px solid #333;
             display: flex;
             align-items: center;
-            gap: 3px;
+            gap: 1px;
         }
         
         .section-title .icon {
@@ -109,7 +109,7 @@
             margin-bottom: 2px;
             display: flex;
             align-items: flex-start;
-            gap: 3px;
+            gap: 1px;
             font-size: 8.5pt;
         }
         
