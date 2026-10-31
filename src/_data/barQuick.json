@@ -1,0 +1,13 @@
+{
+  "title": "Samoobslužný bar",
+  "intro": "Vyberte si, připravte si a zapište. 🍺 ☕",
+  "items": [
+    "<strong>Bar obsluhují pouze dospělí od 18 let.</strong> Dětem nápoje připraví dospělý doprovod. Alkohol je určen pouze osobám od 18 let.",
+    "<strong>Na tabletu si založte účet</strong> pro sebe, pokoj nebo skupinu. Každý nápoj i kávu si na něj hned zapište.",
+    "<strong>Místo tabletu můžete použít lístek:</strong> napište jméno nebo název účtu, nápoj a počet kusů. Zvolte vždy jen jeden způsob zápisu.",
+    "<strong>Útratu zaplatíte na konci pobytu</strong>, samostatně od ubytování.",
+    "<strong>Nápoje a barové sklenice zůstávají ve společných prostorách.</strong> Použité nádobí odložte na označené místo.",
+    "<strong>Něco došlo nebo nefunguje? Dejte nám vědět.</strong> O sudy a nastavení výčepu i kávovaru se postaráme my."
+  ],
+  "closing": "Děkujeme a na zdraví!"
+}

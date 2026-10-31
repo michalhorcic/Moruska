@@ -136,3 +136,9 @@ Pro čistý výtisk vypněte záhlaví a zápatí prohlížeče.
 Odkazy vedou z praktických informací a z části 5 ubytovacího řádu.
 Údaj o baru na tiskových kartičkách se upravuje v
 `content.practicalInfo.meals.bar` v `src/_data/content.json`.
+
+Stručný návod v šesti bodech je na `/samoobsluzny-bar/strucne/`,
+verze pro vyvěšení na bar na `/samoobsluzny-bar/strucne/tisk/` (jedna A4).
+Obě varianty sdílejí `src/_data/barQuick.json` a šablonu
+`src/_includes/partials/bar-quick.njk`. Úplná pravidla odkazují na stručný
+návod a stručný návod odkazuje zpět na úplná pravidla.
