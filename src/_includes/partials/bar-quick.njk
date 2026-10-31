@@ -1,0 +1,12 @@
+<article class="bar-quick">
+    <header>
+        <p class="eyebrow">Jindřichův dům</p>
+        <h1>{{ barQuick.title }}</h1>
+        <p class="quick-intro">{{ barQuick.intro }}</p>
+    </header>
+    <ul class="quick-points">
+        {% for item in barQuick.items %}<li>{{ item | safe }}</li>{% endfor %}
+    </ul>
+    <p class="quick-closing">{{ barQuick.closing }}</p>
+    <p class="quick-details">Podrobná pravidla: <a href="/samoobsluzny-bar/">jindrichuvdum.cz/samoobsluzny-bar/</a></p>
+</article>

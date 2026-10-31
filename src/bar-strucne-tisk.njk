@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+title: Samoobslužný bar stručně – tisk | Jindřichův dům
+permalink: /samoobsluzny-bar/strucne/tisk/index.html
+description: Stručný návod k samoobslužnému baru pro vyvěšení na bar. Tisk na jednu A4.
+stylesheets:
+  - /css/ubytovaci-rad.css
+  - /css/bar.css
+  - /css/bar-quick.css
+---
+<nav class="print-controls page-width" aria-label="Tisk stručného návodu">
+    <a href="/samoobsluzny-bar/strucne/">Zpět na stručný návod</a>
+    <button type="button" id="print-bar">Vytisknout / uložit do PDF</button>
+    <p>Jedna A4 na výšku. Pro čistý výtisk vypněte v nastavení tisku záhlaví a zápatí prohlížeče.</p>
+</nav>
+<main class="page-width bar-page">
+    {% include "partials/bar-quick.njk" %}
+</main>
+<script src="/js/bar-print.js" defer></script>
