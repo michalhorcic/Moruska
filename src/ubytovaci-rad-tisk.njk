@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+title: Ubytovací řád – verze pro tisk | Jindřichův dům
+permalink: /ubytovaci-rad/tisk/index.html
+description: Úplný ubytovací řád Jindřichova domu a příloha pro školy a skupiny ve verzi pro tisk.
+stylesheets:
+  - /css/ubytovaci-rad.css
+---
+<nav class="print-controls page-width" aria-label="Tisk ubytovacího řádu">
+    <a href="/ubytovaci-rad/">Zpět na ubytovací řád</a>
+    <button type="button" id="print-rules">Vytisknout / uložit do PDF</button>
+    <p>Formát A4 na výšku. Pro čistý výtisk vypněte v nastavení tisku záhlaví a zápatí prohlížeče.</p>
+</nav>
+<main class="page-width rules-print">
+    <header class="intro">
+        <p class="eyebrow">Jindřichův dům · Pec pod Sněžkou 24</p>
+        <h1>Ubytovací řád</h1>
+        <p>{{ accommodationRules.intro }}</p>
+    </header>
+    {% include "partials/electrical-safety.njk" %}
+    <div class="rules-text">
+        {% include "partials/accommodation-rules.njk" %}
+    </div>
+</main>
+<script src="/js/rules-print.js" defer></script>

@@ -1,0 +1,12 @@
+<aside class="electrical-safety" aria-labelledby="electrical-safety-title">
+    <svg class="electrical-safety-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true" focusable="false">
+        <path d="M24 5 45 42H3L24 5Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M24 18v11" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="24" cy="35" r="2" fill="currentColor"/>
+    </svg>
+    <div>
+        <h2 id="electrical-safety-title">{{ accommodationRules.electricalSafety.title }}</h2>
+        <p><strong>{{ accommodationRules.electricalSafety.intro }}</strong></p>
+        <ul>{% for item in accommodationRules.electricalSafety.items %}<li>{{ item }}</li>{% endfor %}</ul>
+    </div>
+</aside>

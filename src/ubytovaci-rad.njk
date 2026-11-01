@@ -19,6 +19,8 @@ stylesheets:
             <h1>Ubytovací řád</h1>
             <p class="lead">{{ accommodationRules.intro }}</p>
         </header>
+        <p class="rules-actions"><a href="/ubytovaci-rad/tisk/">Verze pro tisk / uložit do PDF</a></p>
+        {% include "partials/electrical-safety.njk" %}
         <div class="rules-layout">
             <nav class="contents" aria-label="Obsah ubytovacího řádu">
                 <h2>Co potřebujete vědět</h2>
@@ -29,36 +31,7 @@ stylesheets:
                 <a href="#skoly-a-skupiny">Příloha pro školy a skupiny</a>
             </nav>
             <div class="rules-text">
-                {% for section in accommodationRules.sections %}
-                <section id="{{ section.id }}" aria-labelledby="nadpis-{{ section.id }}">
-                    <h2 id="nadpis-{{ section.id }}"><span>{{ section.number }}.</span> {{ section.title }}</h2>
-                    {% for paragraph in section.paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
-                    {% if section.link %}<p><a href="{{ section.link.url }}">{{ section.link.text }}</a></p>{% endif %}
-                    {% if section.items.length %}<ul>{% for item in section.items %}<li>{{ item }}</li>{% endfor %}</ul>{% endif %}
-                </section>
-                {% endfor %}
-                <section id="kontakty" aria-labelledby="nadpis-kontakty" class="contacts">
-                    <h2 id="nadpis-kontakty">Důležité kontakty</h2>
-                    <dl>
-                        <div><dt>Provozovatel</dt><dd><a href="tel:+420739655826">+420 739 655 826</a></dd></div>
-                        <div><dt>Tísňová linka</dt><dd><a href="tel:112">112</a></dd></div>
-                        <div><dt>Záchranná služba</dt><dd><a href="tel:155">155</a></dd></div>
-                        <div><dt>Hasiči</dt><dd><a href="tel:150">150</a></dd></div>
-                        <div><dt>Horská služba</dt><dd><a href="tel:1210">1210</a></dd></div>
-                    </dl>
-                    <p><a href="mailto:jindrichuvdum@jindrichuvdum.cz">jindrichuvdum@jindrichuvdum.cz</a></p>
-                </section>
-                <p class="closing">{{ accommodationRules.closing }}</p>
-                <section id="skoly-a-skupiny" aria-labelledby="nadpis-skoly">
-                    <p class="eyebrow">Příloha k ubytovacímu řádu</p>
-                    <h2 id="nadpis-skoly">Školy a organizované skupiny</h2>
-                    <p>{{ groupRules.intro }}</p>
-                    {% for section in groupRules.sections %}
-                    <h3>{{ section.title }}</h3>
-                    <ul>{% for item in section.items %}<li>{{ item }}</li>{% endfor %}</ul>
-                    {% endfor %}
-                    <p>{{ groupRules.closing }}</p>
-                </section>
+                {% include "partials/accommodation-rules.njk" %}
             </div>
         </div>
     </main>

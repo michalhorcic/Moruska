@@ -85,6 +85,7 @@
         "V domě jsou zakázány svíčky, otevřený oheň, vlastní vařiče, přímotopy a jiné tepelné spotřebiče bez souhlasu provozovatele. Kachlová kamna a další topidla obsluhuje pouze provozovatel.",
         "Pyrotechnika je zakázána v domě i jeho okolí. Únikové cesty, chodby, dveře, hasicí přístroje a další bezpečnostní zařízení musí zůstat volné a přístupné.",
         "V ubytovacích patrech je starší elektroinstalace. Zásuvky na pokojích i na chodbách proto používejte pouze k nabíjení drobné osobní elektroniky, například mobilních telefonů, tabletů nebo notebooků. Jiné vlastní elektrické spotřebiče, zejména vysoušeče bot, fény, varné konvice a přímotopy, zde nepoužívejte. Jejich použití je možné pouze po předchozí domluvě s provozovatelem, který určí vhodné místo v lyžárně nebo u baru. Děkujeme, že pomáháte předcházet přetížení elektroinstalace a požárům.",
+        "Používejte pouze nepoškozené nabíječky a kabely určené výrobcem pro dané zařízení. Vadné nabíječky a kabely nepoužívejte. Nabíjejte pod dohledem, na pevném nehořlavém povrchu, nikdy na posteli ani pod přikrývkou. Při odchodu z pokoje nabíječky odpojte ze zásuvky.",
         "Elektrokola a velké akumulátory se nenabíjejí na pokojích. Nabíjení je možné pouze po domluvě na místě určeném provozovatelem.",
         "Při požáru, úrazu nebo jiné mimořádné události host okamžitě upozorní provozovatele a podle situace volá 112. Pokyny k evakuaci mají přednost před ostatními pravidly."
       ]
@@ -123,5 +124,15 @@
       ]
     }
   ],
-  "closing": "Tento řád je účinný od zveřejnění a tvoří součást podmínek ubytování. Individuální dohoda nebo smlouva může upravit dílčí provozní podmínky; ostatní ustanovení zůstávají v platnosti."
+  "closing": "Tento řád je účinný od zveřejnění a tvoří součást podmínek ubytování. Individuální dohoda nebo smlouva může upravit dílčí provozní podmínky; ostatní ustanovení zůstávají v platnosti.",
+  "electricalSafety": {
+    "title": "Pozor na riziko požáru",
+    "intro": "V ubytovacích patrech je starší elektroinstalace. Pomozte nám předcházet přetížení a požárům.",
+    "items": [
+      "Zásuvky na pokojích a chodbách používejte pouze k nabíjení drobné osobní elektroniky (telefon, tablet, notebook).",
+      "Vysoušeče bot, fény, konvice a další vlastní elektrické spotřebiče v patrech nepoužívejte. Po domluvě s provozovatelem je lze používat na určeném místě v lyžárně nebo u baru.",
+      "Používejte pouze nepoškozené nabíječky a kabely určené výrobcem pro dané zařízení. Vadné nabíječky a kabely nepoužívejte. Nabíjejte pod dohledem, na pevném nehořlavém povrchu, nikdy na posteli ani pod přikrývkou. Při odchodu z pokoje nabíječky odpojte ze zásuvky.",
+      "Elektrokola a velké akumulátory na pokojích nenabíjejte. Místo nabíjení vždy předem dohodněte s provozovatelem."
+    ]
+  }
 }

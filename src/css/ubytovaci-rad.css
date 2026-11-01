@@ -58,3 +58,38 @@ footer { border-top: 1px solid #d8ddd4; padding-block: 28px; margin-top: 40px !i
     li, .contacts { break-inside: avoid; }
     a { color: inherit; text-decoration: none; }
 }
+
+/* Fire prevention remains prominent on screen and on a monochrome printout. */
+.electrical-safety { display: flex; align-items: flex-start; gap: 20px; margin: 0 0 36px; padding: 24px; border: 2px solid #9c301e; border-left-width: 8px; border-radius: 8px; background: #fff0e8; color: #542015; }
+.electrical-safety-icon { flex: 0 0 48px; }
+.electrical-safety h2 { margin: 0 0 12px; font-size: 1.5rem; }
+.electrical-safety p { margin: 0 0 12px; }
+.electrical-safety ul { margin: 0; padding-left: 22px; }
+.electrical-safety li { margin-bottom: 10px; }
+.electrical-safety li:last-child { margin-bottom: 0; }
+.rules-actions { margin: 0 0 28px; }
+.rules-actions a, .print-controls button { display: inline-block; padding: 10px 18px; border: 2px solid #904027; border-radius: 6px; background: #fff; color: #572619; font: inherit; font-weight: 700; cursor: pointer; }
+.print-controls { padding-block: 24px; }
+.print-controls button { margin: 8px 16px; }
+.print-controls button:focus-visible { outline: 3px solid #904027; outline-offset: 4px; }
+.rules-print { max-width: 850px; }
+@media (max-width: 600px) {
+    .electrical-safety { gap: 12px; padding: 16px; }
+    .electrical-safety-icon { flex-basis: 32px; width: 32px; height: 32px; }
+    .electrical-safety h2 { font-size: 1.2rem; }
+}
+@page { size: A4 portrait; margin: 16mm; }
+@media print {
+    .print-controls, .rules-actions { display: none; }
+    .rules-print { max-width: none; }
+    .intro { max-width: none; }
+    .eyebrow, .closing, .rules-text h2 span { color: #000; }
+    .electrical-safety { color: #000; background: #fff; border-color: #000; border-radius: 0; padding: 12pt; gap: 12pt; margin-bottom: 16pt; break-inside: avoid; font-size: 10pt; line-height: 1.4; }
+    .electrical-safety h2 { font-size: 15pt; }
+    .electrical-safety li { margin-bottom: 5pt; }
+    .rules-text h2 { font-size: 13pt; }
+    .rules-text h3 { font-size: 11pt; break-after: avoid; }
+    .rules-text li { margin-bottom: 6pt; }
+    .rules-text p { orphans: 3; widows: 3; }
+    #skoly-a-skupiny { break-before: page; }
+}
