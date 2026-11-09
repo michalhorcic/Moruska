@@ -1,88 +1,89 @@
 ---
-layout: layouts/web.njk
+layout: layouts/base.njk
+layoutStylesheet: /css/practical-info.css
 title: Praktické informace pro váš pobyt | Jindřichův dům
 description: Co si vzít s sebou na Jindřichův dům, příjezd a odjezd, časy jídel, pitná voda, Wi-Fi a kontakty během pobytu.
 stylesheets:
   - /css/nav.css
-  - /css/practical-info.css
 ---
+<a class="skip-link" href="#pruvodce">Přejít k informacím</a>
 {% include "partials/navigation.njk" %}
-<main class="container practical-page">
-    <header class="header">
-        <div class="header-content">
-            <h1>{{ practicalPage.title }}</h1>
-            <p class="subtitle">{{ practicalPage.intro }}</p>
-        </div>
+<main class="practical-page">
+    <header class="practical-intro">
+        <p class="eyebrow">Jindřichův dům · Průvodce pobytem</p>
+        <h1>{{ practicalPage.title }}</h1>
+        <p class="practical-lead">{{ practicalPage.intro }}</p>
     </header>
-    <div class="grid">
-        {% for card in practicalPage.cards %}
-        <section class="card">
-            <div class="card-header">
-                <span class="card-icon" aria-hidden="true">{{ card.icon }}</span>
-                <h2 class="card-title">{{ card.title }}</h2>
-            </div>
-            {% for item in card.items %}
-            <p class="info-item"><span class="info-text"><strong>{{ item.label }}:</strong> {{ item.text }}</span></p>
-            {% endfor %}
-        </section>
-        {% endfor %}
-        <section class="card">
-            <div class="card-header">
-                <span class="card-icon" aria-hidden="true">🍺</span>
-                <h2 class="card-title">Samoobslužný bar</h2>
-            </div>
-            <p>Nápoje si vyberete a připravíte sami. Každý odběr si hned zapište do tabletu nebo na připravený lístek; útratu uhradíte samostatně na konci pobytu.</p>
-            <p><strong>{{ barRules.adults }}</strong> Dětem nápoje připraví a zapíše dospělý doprovod.</p>
-            <p><a href="/samoobsluzny-bar/">Pravidla samoobslužného baru</a></p>
-        </section>
-        <section class="card wifi-card">
-            <div class="card-header">
-                <span class="card-icon" aria-hidden="true">📶</span>
-                <h2 class="card-title">Wi-Fi</h2>
-            </div>
-            <div class="wifi-box">
-                <p class="wifi-name">{{ content.practicalInfo.wifi.networkName }}</p>
-                <p>Heslo:</p>
-                <p class="wifi-password">{{ content.practicalInfo.wifi.password }}</p>
-            </div>
-        </section>
-        <section class="card">
-            <div class="card-header">
-                <span class="card-icon" aria-hidden="true">ℹ️</span>
-                <h2 class="card-title">Během pobytu</h2>
-            </div>
-            <ul class="rules-list">
-                {% for rule in practicalPage.rules %}
-                <li><span><strong>{{ rule.label }}:</strong> {{ rule.text }}</span></li>
+    <div class="practical-layout">
+        <nav class="practical-contents" aria-labelledby="contents-title">
+            <h2 id="contents-title">Přejít na</h2>
+            <ul>
+                <li><a href="#wifi">Wi-Fi</a></li>
+                {% for card in practicalPage.cards %}
+                <li><a href="#{{ card.id }}">{{ card.title }}</a></li>
                 {% endfor %}
+                <li><a href="#samoobsluzny-bar">Samoobslužný bar</a></li>
+                <li><a href="#behem-pobytu">Během pobytu</a></li>
+                <li><a href="#kontakty">Kontakty a pomoc</a></li>
+                <li><a href="#registrace">Registrace hostů</a></li>
             </ul>
-            <p><a href="/ubytovaci-rad/">Úplný ubytovací řád a pravidla pro školy a skupiny</a></p>
-        </section>
-    </div>
-    <section class="card practical-contacts">
-        <h2 class="card-title">Potřebujete nás?</h2>
-        <p class="host-phone"><a href="tel:{{ content.cottage.contact.phone | replace(' ', '') }}">{{ content.cottage.contact.phone }}</a></p>
-        <p>{{ practicalPage.contactIntro }}</p>
-        <h3>Nouzové kontakty</h3>
-        <div class="contact-grid">
-            {% for contact in practicalPage.emergencyContacts %}
-            <div class="contact-item">
-                <p class="contact-label">{{ contact.label }}</p>
-                <p class="contact-number"><a href="tel:{{ contact.number }}">{{ contact.number }}</a></p>
-            </div>
+            <a class="contents-phone" href="tel:{{ content.cottage.contact.phone | replace(' ', '') }}">Zavolejte nám<br><strong>{{ content.cottage.contact.phone }}</strong></a>
+        </nav>
+        <div class="practical-guide" id="pruvodce" tabindex="-1">
+            <section class="guide-section wifi-section" id="wifi" aria-labelledby="wifi-title">
+                <h2 id="wifi-title">Wi-Fi</h2>
+                <dl class="wifi-details">
+                    <div><dt>Síť</dt><dd>{{ content.practicalInfo.wifi.networkName }}</dd></div>
+                    <div><dt>Heslo</dt><dd>{{ content.practicalInfo.wifi.password }}</dd></div>
+                </dl>
+            </section>
+            {% for card in practicalPage.cards %}
+            <section class="guide-section" id="{{ card.id }}" aria-labelledby="{{ card.id }}-title">
+                <h2 id="{{ card.id }}-title">{{ card.title }}</h2>
+                <dl class="info-rows">
+                    {% for item in card.items %}
+                    <div><dt>{{ item.label }}</dt><dd{% if item.label in ['Příjezd', 'Odjezd', 'Snídaně', 'Večeře'] %} class="important-time"{% endif %}>{{ item.text }}</dd></div>
+                    {% endfor %}
+                </dl>
+            </section>
             {% endfor %}
+            <section class="guide-section" id="samoobsluzny-bar" aria-labelledby="bar-title">
+                <h2 id="bar-title">Samoobslužný bar</h2>
+                <p>Nápoje si vyberete a připravíte sami. Každý odběr si hned zapište do tabletu nebo na připravený lístek; útratu uhradíte samostatně na konci pobytu.</p>
+                <p><strong>{{ barRules.adults }}</strong> Dětem nápoje připraví a zapíše dospělý doprovod.</p>
+                <a href="/samoobsluzny-bar/">Pravidla samoobslužného baru</a>
+            </section>
+            <section class="guide-section" id="behem-pobytu" aria-labelledby="rules-title">
+                <h2 id="rules-title">Během pobytu</h2>
+                <dl class="info-rows">
+                    {% for rule in practicalPage.rules %}
+                    <div><dt>{{ rule.label }}</dt><dd>{{ rule.text }}</dd></div>
+                    {% endfor %}
+                </dl>
+                <p class="section-link"><a href="/ubytovaci-rad/">Úplný ubytovací řád a pravidla pro školy a skupiny</a></p>
+            </section>
+            <section class="guide-section" id="kontakty" aria-labelledby="contacts-title">
+                <h2 id="contacts-title">Potřebujete nás?</h2>
+                <a class="host-phone" href="tel:{{ content.cottage.contact.phone | replace(' ', '') }}">{{ content.cottage.contact.phone }}</a>
+                <p>{{ practicalPage.contactIntro }}</p>
+                <h3>Nouzové kontakty</h3>
+                <dl class="emergency-contacts">
+                    {% for contact in practicalPage.emergencyContacts %}
+                    <div><dt>{{ contact.label }}</dt><dd><a href="tel:{{ contact.number }}">{{ contact.number }}</a></dd></div>
+                    {% endfor %}
+                </dl>
+            </section>
+            <section class="guide-section registration-section" id="registrace" aria-labelledby="registration-title">
+                <div>
+                    <h2 id="registration-title">{{ practicalPage.registrationTitle }}</h2>
+                    <p>{{ practicalPage.registrationText }}</p>
+                    <a class="registration-link" href="{{ content.practicalInfo.registration.qrUrl | escape }}">Vyplnit údaje k pobytu</a>
+                </div>
+                <img class="registration-qr" src="https://api.qrserver.com/v1/create-qr-code/?size={{ content.practicalInfo.registration.qrImageSize }}x{{ content.practicalInfo.registration.qrImageSize }}&amp;data={{ content.practicalInfo.registration.qrUrl | urlencode }}" width="140" height="140" alt="QR kód pro registraci hostů" loading="lazy">
+            </section>
         </div>
-    </section>
-    <section class="qr-section">
-        <h2>{{ practicalPage.registrationTitle }}</h2>
-        <p class="qr-description">{{ practicalPage.registrationText }}</p>
-        <p><a class="registration-link" href="{{ content.practicalInfo.registration.qrUrl | escape }}">Vyplnit údaje k pobytu</a></p>
-        <div class="qr-code">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size={{ content.practicalInfo.registration.qrImageSize }}x{{ content.practicalInfo.registration.qrImageSize }}&amp;data={{ content.practicalInfo.registration.qrUrl | urlencode }}" width="200" height="200" alt="QR kód pro registraci hostů" loading="lazy">
-        </div>
-    </section>
+    </div>
 </main>
-<footer class="footer">
-    <p><strong>{{ practicalPage.footer }}</strong></p>
-    <p>Michal a Lucka</p>
+<footer class="practical-footer">
+    <p>{{ practicalPage.footer }} <span>Michal a Lucka</span></p>
 </footer>

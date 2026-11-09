@@ -18,7 +18,8 @@
           "label": "Pokyny k příjezdu",
           "text": "Podrobnosti k dopravě a příjezdu vám pošleme e-mailem před pobytem."
         }
-      ]
+      ],
+      "id": "co-s-sebou"
     },
     {
       "title": "Příjezd a odjezd",
@@ -40,7 +41,8 @@
           "label": "Zavazadla",
           "text": "Chcete ještě vyrazit na výlet? Po předchozí domluvě si můžete zavazadla nechat na domluveném místě."
         }
-      ]
+      ],
+      "id": "prijezd-a-odjezd"
     },
     {
       "title": "Platba",
@@ -50,7 +52,8 @@
           "label": "Jak zaplatit",
           "text": "Zaplatit můžete hotově nebo převodem pomocí QR kódu. Platební karty nepřijímáme."
         }
-      ]
+      ],
+      "id": "platba"
     },
     {
       "title": "Časy jídel",
@@ -72,7 +75,8 @@
           "label": "Diety a alergie",
           "text": "Dietní požadavky a potravinové alergie nám prosím oznamte předem, abychom s vámi mohli potvrdit možnosti stravování."
         }
-      ]
+      ],
+      "id": "casy-jidel"
     },
     {
       "title": "Během dne",
@@ -90,7 +94,8 @@
           "label": "Lednice",
           "text": "V jídelně najdete menší lednici určenou pro hosty."
         }
-      ]
+      ],
+      "id": "behem-dne"
     }
   ],
   "rules": [
