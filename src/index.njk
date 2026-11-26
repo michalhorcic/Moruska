@@ -5,6 +5,7 @@ description: "Rodinný horský penzion v Peci pod Sněžkou. Ubytování v Krkon
 stylesheets:
   - /css/cottage.css
   - /css/nav.css
+  - /css/cancellation.css
 headScripts:
   - /js/seasonal-hero.js
 ---
@@ -156,6 +157,7 @@ headScripts:
                 <a href="mailto:{{ content.cottage.hero.email }}" class="btn btn-primary">Napsat e-mail</a>
                 <a href="tel:{{ content.cottage.hero.phone }}" class="btn btn-primary">Zavolat</a>
             </div>
+            <p class="cancellation-link"><a href="/storno-podminky/" data-cancellation-link>Storno podmínky</a></p>
             <div class="contact-info">
                 <div class="contact-item">
                     <h3>{{ content.cottage.contact.name }}</h3>
@@ -180,6 +182,14 @@ headScripts:
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Jindřichův dům. Všechna práva vyhrazena.</p>
-            <p><a href="/practical-info" style="color: inherit;">Praktické informace</a> · <a href="/ubytovaci-rad/" style="color: inherit;">Ubytovací řád</a></p>
+            <p><a href="/practical-info" style="color: inherit;">Praktické informace</a> · <a href="/ubytovaci-rad/" style="color: inherit;">Ubytovací řád</a> · <a href="/storno-podminky/" data-cancellation-link style="color: inherit;">Storno podmínky</a></p>
         </div>
     </footer>
+
+    <dialog class="cancellation-dialog" aria-labelledby="cancellation-title">
+        <button type="button" class="cancellation-close" autofocus>Zavřít ×</button>
+        <h2 id="cancellation-title">Storno podmínky</h2>
+        {% include "partials/cancellation-terms.njk" %}
+        <p><a href="/storno-podminky/">Otevřít jako samostatnou stránku</a></p>
+    </dialog>
+    <script src="/js/cancellation.js" defer></script>
